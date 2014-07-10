@@ -1,0 +1,10 @@
+{
+	"selectedProfile": "(Default)",
+	"profiles": {
+		"Forge": {
+			"name": "Forge",
+			"lastVersionId": "1.7.2-Forge10.12.2.1147"
+		}
+	},
+	"clientToken": "ac84efc8-b5e8-42d9-9821-0f34cc99122a"
+}

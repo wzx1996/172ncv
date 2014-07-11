@@ -1,0 +1,3691 @@
+// class version 50.0 (50)
+// access flags 0x21
+public class bdr extends bdu  {
+
+  // compiled from: GuiContainerCreative.java
+
+  @Lcpw/mods/fml/relauncher/SideOnly;(value=Lcpw/mods/fml/relauncher/Side;.CLIENT)
+  // access flags 0x0
+  INNERCLASS bdt bdr CreativeSlot
+  // access flags 0x8
+  static INNERCLASS bds bdr ContainerCreative
+
+  // access flags 0x1A
+  private final static Lbqo; u
+
+  // access flags 0xA
+  private static Lpu; v
+
+  // access flags 0xA
+  private static I w
+
+  // access flags 0x2
+  private F x
+
+  // access flags 0x2
+  private Z y
+
+  // access flags 0x2
+  private Z z
+
+  // access flags 0x2
+  private Lbap; A
+
+  // access flags 0x2
+  private Ljava/util/List; B
+
+  // access flags 0x2
+  private Lzk; C
+
+  // access flags 0x2
+  private Z D
+
+  // access flags 0x2
+  private Lbdq; E
+
+  // access flags 0x1A
+  private final static Ljava/lang/String; __OBFID = "CL_00000752"
+
+  // access flags 0xA
+  private static I tabPage
+
+  // access flags 0x2
+  private I maxPages
+
+  // access flags 0x1
+  public <init>(Lxl;)V
+   L0
+    LINENUMBER 57 L0
+    ALOAD 0
+    NEW bds
+    DUP
+    ALOAD 1
+    INVOKESPECIAL bds.<init> (Lxl;)V
+    INVOKESPECIAL bdu.<init> (Lye;)V
+   L1
+    LINENUMBER 53 L1
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bdr.maxPages : I
+   L2
+    LINENUMBER 58 L2
+    ALOAD 1
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    PUTFIELD xl.bp : Lye;
+   L3
+    LINENUMBER 59 L3
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bdr.p : Z
+   L4
+    LINENUMBER 60 L4
+    ALOAD 0
+    SIPUSH 136
+    PUTFIELD bdr.g : I
+   L5
+    LINENUMBER 61 L5
+    ALOAD 0
+    SIPUSH 195
+    PUTFIELD bdr.f : I
+   L6
+    LINENUMBER 62 L6
+    RETURN
+   L7
+    LOCALVARIABLE this Lbdr; L0 L7 0
+    LOCALVARIABLE par1EntityPlayer Lxl; L0 L7 1
+    MAXSTACK = 4
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public c()V
+    ALOAD 0
+    INVOKESPECIAL bdu.c ()V
+   L0
+    LINENUMBER 66 L0
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    INVOKEVIRTUAL biy.h ()Z
+    IFNE L1
+   L2
+    LINENUMBER 68 L2
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    NEW bea
+    DUP
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    INVOKESPECIAL bea.<init> (Lxl;)V
+    INVOKEVIRTUAL azd.a (Lbcd;)V
+   L1
+    LINENUMBER 70 L1
+   FRAME FULL [bdr] []
+    RETURN
+   L3
+    LOCALVARIABLE this Lbdr; L0 L3 0
+    MAXSTACK = 4
+    MAXLOCALS = 1
+
+  // access flags 0x4
+  protected a(Lzk;III)V
+   L0
+    LINENUMBER 74 L0
+    ALOAD 0
+    ICONST_1
+    PUTFIELD bdr.D : Z
+   L1
+    LINENUMBER 75 L1
+    ILOAD 4
+    ICONST_1
+    IF_ICMPNE L2
+    ICONST_1
+    GOTO L3
+   L2
+   FRAME FULL [bdr zk I I I] []
+    ICONST_0
+   L3
+   FRAME FULL [bdr zk I I I] [I]
+    ISTORE 5
+   L4
+    LINENUMBER 76 L4
+    ILOAD 2
+    SIPUSH -999
+    IF_ICMPNE L5
+    ILOAD 4
+    IFNE L5
+    ICONST_4
+    GOTO L6
+   L5
+   FRAME FULL [bdr zk I I I I] []
+    ILOAD 4
+   L6
+   FRAME FULL [bdr zk I I I I] [I]
+    ISTORE 4
+   L7
+    LINENUMBER 80 L7
+    ALOAD 1
+    IFNONNULL L8
+    GETSTATIC bdr.w : I
+    GETSTATIC aaf.m : Laaf;
+    INVOKEVIRTUAL aaf.a ()I
+    IF_ICMPEQ L8
+    ILOAD 4
+    ICONST_5
+    IF_ICMPEQ L8
+   L9
+    LINENUMBER 82 L9
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    ASTORE 7
+   L10
+    LINENUMBER 84 L10
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    IFNULL L11
+   L12
+    LINENUMBER 86 L12
+    ILOAD 3
+    IFNE L13
+   L14
+    LINENUMBER 88 L14
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    ICONST_1
+    INVOKEVIRTUAL bje.a (Labp;Z)Lvw;
+    POP
+   L15
+    LINENUMBER 89 L15
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    INVOKEVIRTUAL biy.a (Labp;)V
+   L16
+    LINENUMBER 90 L16
+    ALOAD 7
+    ACONST_NULL
+    CHECKCAST abp
+    INVOKEVIRTUAL xj.b (Labp;)V
+   L13
+    LINENUMBER 93 L13
+   FRAME FULL [bdr zk I I I I T xj] []
+    ILOAD 3
+    ICONST_1
+    IF_ICMPNE L11
+   L17
+    LINENUMBER 95 L17
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    ICONST_1
+    INVOKEVIRTUAL abp.a (I)Labp;
+    ASTORE 6
+   L18
+    LINENUMBER 96 L18
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    ALOAD 6
+    ICONST_1
+    INVOKEVIRTUAL bje.a (Labp;Z)Lvw;
+    POP
+   L19
+    LINENUMBER 97 L19
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ALOAD 6
+    INVOKEVIRTUAL biy.a (Labp;)V
+   L20
+    LINENUMBER 99 L20
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    GETFIELD abp.b : I
+    IFNE L11
+   L21
+    LINENUMBER 101 L21
+    ALOAD 7
+    ACONST_NULL
+    CHECKCAST abp
+    INVOKEVIRTUAL xj.b (Labp;)V
+    GOTO L11
+   L8
+    LINENUMBER 110 L8
+   FRAME FULL [bdr zk I I I I] []
+    ALOAD 1
+    ALOAD 0
+    GETFIELD bdr.C : Lzk;
+    IF_ACMPNE L22
+    ILOAD 5
+    IFEQ L22
+   L23
+    LINENUMBER 112 L23
+    ICONST_0
+    ISTORE 8
+   L24
+   FRAME FULL [bdr zk I I I I T T I] []
+    ILOAD 8
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bo : Lye;
+    INVOKEVIRTUAL ye.a ()Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L11
+   L25
+    LINENUMBER 114 L25
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ACONST_NULL
+    CHECKCAST abp
+    ILOAD 8
+    INVOKEVIRTUAL biy.a (Labp;I)V
+   L26
+    LINENUMBER 112 L26
+    IINC 8 1
+    GOTO L24
+   L22
+    LINENUMBER 121 L22
+   FRAME FULL [bdr zk I I I I] []
+    GETSTATIC bdr.w : I
+    GETSTATIC aaf.m : Laaf;
+    INVOKEVIRTUAL aaf.a ()I
+    IF_ICMPNE L27
+   L28
+    LINENUMBER 123 L28
+    ALOAD 1
+    ALOAD 0
+    GETFIELD bdr.C : Lzk;
+    IF_ACMPNE L29
+   L30
+    LINENUMBER 125 L30
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    ACONST_NULL
+    CHECKCAST abp
+    INVOKEVIRTUAL xj.b (Labp;)V
+    GOTO L11
+   L29
+    LINENUMBER 127 L29
+   FRAME FULL [bdr zk I I I I] []
+    ILOAD 4
+    ICONST_4
+    IF_ICMPNE L31
+    ALOAD 1
+    IFNULL L31
+    ALOAD 1
+    INVOKEVIRTUAL zk.e ()Z
+    IFEQ L31
+   L32
+    LINENUMBER 129 L32
+    ALOAD 1
+    ILOAD 3
+    IFNE L33
+    ICONST_1
+    GOTO L34
+   L33
+   FRAME FULL [bdr zk I I I I] [zk]
+    ALOAD 1
+    INVOKEVIRTUAL zk.d ()Labp;
+    INVOKEVIRTUAL abp.e ()I
+   L34
+   FRAME FULL [bdr zk I I I I] [zk I]
+    INVOKEVIRTUAL zk.a (I)Labp;
+    ASTORE 9
+   L35
+    LINENUMBER 130 L35
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    ALOAD 9
+    ICONST_1
+    INVOKEVIRTUAL bje.a (Labp;Z)Lvw;
+    POP
+   L36
+    LINENUMBER 131 L36
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ALOAD 9
+    INVOKEVIRTUAL biy.a (Labp;)V
+    GOTO L11
+   L31
+    LINENUMBER 133 L31
+   FRAME FULL [bdr zk I I I I] []
+    ILOAD 4
+    ICONST_4
+    IF_ICMPNE L37
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    INVOKEVIRTUAL xj.o ()Labp;
+    IFNULL L37
+   L38
+    LINENUMBER 135 L38
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    INVOKEVIRTUAL xj.o ()Labp;
+    ICONST_1
+    INVOKEVIRTUAL bje.a (Labp;Z)Lvw;
+    POP
+   L39
+    LINENUMBER 136 L39
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    INVOKEVIRTUAL xj.o ()Labp;
+    INVOKEVIRTUAL biy.a (Labp;)V
+   L40
+    LINENUMBER 137 L40
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    ACONST_NULL
+    CHECKCAST abp
+    INVOKEVIRTUAL xj.b (Labp;)V
+    GOTO L11
+   L37
+    LINENUMBER 141 L37
+   FRAME FULL [bdr zk I I I I] []
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bo : Lye;
+    ALOAD 1
+    IFNONNULL L41
+    ILOAD 2
+    GOTO L42
+   L41
+   FRAME FULL [bdr zk I I I I] [ye]
+    ALOAD 1
+    CHECKCAST bdt
+    INVOKESTATIC bdt.access$000 (Lbdt;)Lzk;
+    GETFIELD zk.g : I
+   L42
+   FRAME FULL [bdr zk I I I I] [ye I]
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    INVOKEVIRTUAL ye.a (IIILxl;)Labp;
+    POP
+   L43
+    LINENUMBER 142 L43
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bo : Lye;
+    INVOKEVIRTUAL ye.b ()V
+    GOTO L11
+   L27
+    LINENUMBER 145 L27
+   FRAME FULL [bdr zk I I I I] []
+    ILOAD 4
+    ICONST_5
+    IF_ICMPEQ L44
+    ALOAD 1
+    GETFIELD zk.f : Lpo;
+    GETSTATIC bdr.v : Lpu;
+    IF_ACMPNE L44
+   L45
+    LINENUMBER 147 L45
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    ASTORE 7
+   L46
+    LINENUMBER 148 L46
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    ASTORE 6
+   L47
+    LINENUMBER 149 L47
+    ALOAD 1
+    INVOKEVIRTUAL zk.d ()Labp;
+    ASTORE 10
+   L48
+    LINENUMBER 152 L48
+    ILOAD 4
+    ICONST_2
+    IF_ICMPNE L49
+   L50
+    LINENUMBER 154 L50
+    ALOAD 10
+    IFNULL L51
+    ILOAD 3
+    IFLT L51
+    ILOAD 3
+    BIPUSH 9
+    IF_ICMPGE L51
+   L52
+    LINENUMBER 156 L52
+    ALOAD 10
+    INVOKEVIRTUAL abp.m ()Labp;
+    ASTORE 11
+   L53
+    LINENUMBER 157 L53
+    ALOAD 11
+    ALOAD 11
+    INVOKEVIRTUAL abp.e ()I
+    PUTFIELD abp.b : I
+   L54
+    LINENUMBER 158 L54
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    ILOAD 3
+    ALOAD 11
+    INVOKEVIRTUAL xj.a (ILabp;)V
+   L55
+    LINENUMBER 159 L55
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bo : Lye;
+    INVOKEVIRTUAL ye.b ()V
+   L51
+    LINENUMBER 162 L51
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    RETURN
+   L49
+    LINENUMBER 165 L49
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ILOAD 4
+    ICONST_3
+    IF_ICMPNE L56
+   L57
+    LINENUMBER 167 L57
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    IFNONNULL L58
+    ALOAD 1
+    INVOKEVIRTUAL zk.e ()Z
+    IFEQ L58
+   L59
+    LINENUMBER 169 L59
+    ALOAD 1
+    INVOKEVIRTUAL zk.d ()Labp;
+    INVOKEVIRTUAL abp.m ()Labp;
+    ASTORE 11
+   L60
+    LINENUMBER 170 L60
+    ALOAD 11
+    ALOAD 11
+    INVOKEVIRTUAL abp.e ()I
+    PUTFIELD abp.b : I
+   L61
+    LINENUMBER 171 L61
+    ALOAD 7
+    ALOAD 11
+    INVOKEVIRTUAL xj.b (Labp;)V
+   L58
+    LINENUMBER 174 L58
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    RETURN
+   L56
+    LINENUMBER 177 L56
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ILOAD 4
+    ICONST_4
+    IF_ICMPNE L62
+   L63
+    LINENUMBER 179 L63
+    ALOAD 10
+    IFNULL L64
+   L65
+    LINENUMBER 181 L65
+    ALOAD 10
+    INVOKEVIRTUAL abp.m ()Labp;
+    ASTORE 11
+   L66
+    LINENUMBER 182 L66
+    ALOAD 11
+    ILOAD 3
+    IFNE L67
+    ICONST_1
+    GOTO L68
+   L67
+   FRAME FULL [bdr zk I I I I abp xj T T abp abp] [abp]
+    ALOAD 11
+    INVOKEVIRTUAL abp.e ()I
+   L68
+   FRAME FULL [bdr zk I I I I abp xj T T abp abp] [abp I]
+    PUTFIELD abp.b : I
+   L69
+    LINENUMBER 183 L69
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    ALOAD 11
+    ICONST_1
+    INVOKEVIRTUAL bje.a (Labp;Z)Lvw;
+    POP
+   L70
+    LINENUMBER 184 L70
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ALOAD 11
+    INVOKEVIRTUAL biy.a (Labp;)V
+   L64
+    LINENUMBER 187 L64
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    RETURN
+   L62
+    LINENUMBER 190 L62
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ALOAD 6
+    IFNULL L71
+    ALOAD 10
+    IFNULL L71
+    ALOAD 6
+    ALOAD 10
+    INVOKEVIRTUAL abp.a (Labp;)Z
+    IFEQ L71
+    ALOAD 6
+    ALOAD 10
+    INVOKESTATIC abp.a (Labp;Labp;)Z
+    IFEQ L71
+   L72
+    LINENUMBER 192 L72
+    ILOAD 3
+    IFNE L73
+   L74
+    LINENUMBER 194 L74
+    ILOAD 5
+    IFEQ L75
+   L76
+    LINENUMBER 196 L76
+    ALOAD 6
+    ALOAD 6
+    INVOKEVIRTUAL abp.e ()I
+    PUTFIELD abp.b : I
+    GOTO L77
+   L75
+    LINENUMBER 198 L75
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ALOAD 6
+    GETFIELD abp.b : I
+    ALOAD 6
+    INVOKEVIRTUAL abp.e ()I
+    IF_ICMPGE L77
+   L78
+    LINENUMBER 200 L78
+    ALOAD 6
+    DUP
+    GETFIELD abp.b : I
+    ICONST_1
+    IADD
+    PUTFIELD abp.b : I
+    GOTO L77
+   L73
+    LINENUMBER 203 L73
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ALOAD 6
+    GETFIELD abp.b : I
+    ICONST_1
+    IF_ICMPGT L79
+   L80
+    LINENUMBER 205 L80
+    ALOAD 7
+    ACONST_NULL
+    CHECKCAST abp
+    INVOKEVIRTUAL xj.b (Labp;)V
+    GOTO L77
+   L79
+    LINENUMBER 209 L79
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ALOAD 6
+    DUP
+    GETFIELD abp.b : I
+    ICONST_1
+    ISUB
+    PUTFIELD abp.b : I
+    GOTO L77
+   L71
+    LINENUMBER 212 L71
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ALOAD 10
+    IFNULL L81
+    ALOAD 6
+    IFNONNULL L81
+   L82
+    LINENUMBER 214 L82
+    ALOAD 7
+    ALOAD 10
+    INVOKESTATIC abp.b (Labp;)Labp;
+    INVOKEVIRTUAL xj.b (Labp;)V
+   L83
+    LINENUMBER 215 L83
+    ALOAD 7
+    INVOKEVIRTUAL xj.o ()Labp;
+    ASTORE 6
+   L84
+    LINENUMBER 217 L84
+    ILOAD 5
+    IFEQ L77
+   L85
+    LINENUMBER 219 L85
+    ALOAD 6
+    ALOAD 6
+    INVOKEVIRTUAL abp.e ()I
+    PUTFIELD abp.b : I
+    GOTO L77
+   L81
+    LINENUMBER 224 L81
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    ALOAD 7
+    ACONST_NULL
+    CHECKCAST abp
+    INVOKEVIRTUAL xj.b (Labp;)V
+   L77
+    LINENUMBER 226 L77
+   FRAME FULL [bdr zk I I I I abp xj T T abp] []
+    GOTO L11
+   L44
+    LINENUMBER 229 L44
+   FRAME FULL [bdr zk I I I I] []
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    ALOAD 1
+    IFNONNULL L86
+    ILOAD 2
+    GOTO L87
+   L86
+   FRAME FULL [bdr zk I I I I] [ye]
+    ALOAD 1
+    GETFIELD zk.g : I
+   L87
+   FRAME FULL [bdr zk I I I I] [ye I]
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    INVOKEVIRTUAL ye.a (IIILxl;)Labp;
+    POP
+   L88
+    LINENUMBER 231 L88
+    ILOAD 3
+    INVOKESTATIC ye.c (I)I
+    ICONST_2
+    IF_ICMPNE L89
+   L90
+    LINENUMBER 233 L90
+    ICONST_0
+    ISTORE 8
+   L91
+   FRAME FULL [bdr zk I I I I T T I] []
+    ILOAD 8
+    BIPUSH 9
+    IF_ICMPGE L11
+   L92
+    LINENUMBER 235 L92
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    BIPUSH 45
+    ILOAD 8
+    IADD
+    INVOKEVIRTUAL ye.a (I)Lzk;
+    INVOKEVIRTUAL zk.d ()Labp;
+    BIPUSH 36
+    ILOAD 8
+    IADD
+    INVOKEVIRTUAL biy.a (Labp;I)V
+   L93
+    LINENUMBER 233 L93
+    IINC 8 1
+    GOTO L91
+   L89
+    LINENUMBER 238 L89
+   FRAME FULL [bdr zk I I I I] []
+    ALOAD 1
+    IFNULL L11
+   L94
+    LINENUMBER 240 L94
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    ALOAD 1
+    GETFIELD zk.g : I
+    INVOKEVIRTUAL ye.a (I)Lzk;
+    INVOKEVIRTUAL zk.d ()Labp;
+    ASTORE 9
+   L95
+    LINENUMBER 241 L95
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    ALOAD 9
+    ALOAD 1
+    GETFIELD zk.g : I
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    GETFIELD ye.c : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    ISUB
+    BIPUSH 9
+    IADD
+    BIPUSH 36
+    IADD
+    INVOKEVIRTUAL biy.a (Labp;I)V
+   L11
+    LINENUMBER 246 L11
+   FRAME FULL [bdr zk I I I I] []
+    RETURN
+   L96
+    LOCALVARIABLE itemstack1 Labp; L18 L8 6
+    LOCALVARIABLE inventoryplayer Lxj; L10 L8 7
+    LOCALVARIABLE l I L24 L22 8
+    LOCALVARIABLE itemstack Labp; L35 L31 9
+    LOCALVARIABLE itemstack3 Labp; L53 L51 11
+    LOCALVARIABLE itemstack3 Labp; L60 L58 11
+    LOCALVARIABLE itemstack3 Labp; L66 L64 11
+    LOCALVARIABLE itemstack2 Labp; L48 L77 10
+    LOCALVARIABLE itemstack1 Labp; L47 L44 6
+    LOCALVARIABLE inventoryplayer Lxj; L46 L44 7
+    LOCALVARIABLE l I L91 L89 8
+    LOCALVARIABLE itemstack Labp; L95 L11 9
+    LOCALVARIABLE this Lbdr; L0 L96 0
+    LOCALVARIABLE p_146984_1_ Lzk; L0 L96 1
+    LOCALVARIABLE p_146984_2_ I L0 L96 2
+    LOCALVARIABLE p_146984_3_ I L0 L96 3
+    LOCALVARIABLE p_146984_4_ I L0 L96 4
+    LOCALVARIABLE flag Z L4 L96 5
+    MAXSTACK = 5
+    MAXLOCALS = 12
+
+  // access flags 0x1
+  public r_()V
+   L0
+    LINENUMBER 250 L0
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.c : Lbiy;
+    INVOKEVIRTUAL biy.h ()Z
+    IFEQ L1
+   L2
+    LINENUMBER 252 L2
+    ALOAD 0
+    INVOKESPECIAL bdu.r_ ()V
+   L3
+    LINENUMBER 253 L3
+    ALOAD 0
+    GETFIELD bdr.n : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.clear ()V
+   L4
+    LINENUMBER 254 L4
+    ICONST_1
+    INVOKESTATIC org/lwjgl/input/Keyboard.enableRepeatEvents (Z)V
+   L5
+    LINENUMBER 255 L5
+    ALOAD 0
+    NEW bap
+    DUP
+    ALOAD 0
+    GETFIELD bdr.q : Lbag;
+    ALOAD 0
+    GETFIELD bdr.i : I
+    BIPUSH 82
+    IADD
+    ALOAD 0
+    GETFIELD bdr.r : I
+    BIPUSH 6
+    IADD
+    BIPUSH 89
+    ALOAD 0
+    GETFIELD bdr.q : Lbag;
+    GETFIELD bag.a : I
+    INVOKESPECIAL bap.<init> (Lbag;IIII)V
+    PUTFIELD bdr.A : Lbap;
+   L6
+    LINENUMBER 256 L6
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    BIPUSH 15
+    INVOKEVIRTUAL bap.f (I)V
+   L7
+    LINENUMBER 257 L7
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_0
+    INVOKEVIRTUAL bap.a (Z)V
+   L8
+    LINENUMBER 258 L8
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_0
+    INVOKEVIRTUAL bap.e (Z)V
+   L9
+    LINENUMBER 259 L9
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    LDC 16777215
+    INVOKEVIRTUAL bap.g (I)V
+   L10
+    LINENUMBER 260 L10
+    GETSTATIC bdr.w : I
+    ISTORE 1
+   L11
+    LINENUMBER 261 L11
+    ICONST_M1
+    PUTSTATIC bdr.w : I
+   L12
+    LINENUMBER 262 L12
+    ALOAD 0
+    GETSTATIC aaf.a : [Laaf;
+    ILOAD 1
+    AALOAD
+    INVOKESPECIAL bdr.b (Laaf;)V
+   L13
+    LINENUMBER 263 L13
+    ALOAD 0
+    NEW bdq
+    DUP
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKESPECIAL bdq.<init> (Lazd;)V
+    PUTFIELD bdr.E : Lbdq;
+   L14
+    LINENUMBER 264 L14
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bo : Lye;
+    ALOAD 0
+    GETFIELD bdr.E : Lbdq;
+    INVOKEVIRTUAL ye.a (Lyo;)V
+   L15
+    LINENUMBER 265 L15
+    GETSTATIC aaf.a : [Laaf;
+    ARRAYLENGTH
+    ISTORE 2
+   L16
+    LINENUMBER 266 L16
+    ILOAD 2
+    BIPUSH 12
+    IF_ICMPLE L17
+   L18
+    LINENUMBER 268 L18
+    ALOAD 0
+    GETFIELD bdr.n : Ljava/util/List;
+    NEW ban
+    DUP
+    BIPUSH 101
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ALOAD 0
+    GETFIELD bdr.r : I
+    BIPUSH 50
+    ISUB
+    BIPUSH 20
+    BIPUSH 20
+    LDC "<"
+    INVOKESPECIAL ban.<init> (IIIIILjava/lang/String;)V
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L19
+    LINENUMBER 269 L19
+    ALOAD 0
+    GETFIELD bdr.n : Ljava/util/List;
+    NEW ban
+    DUP
+    BIPUSH 102
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ALOAD 0
+    GETFIELD bdr.f : I
+    IADD
+    BIPUSH 20
+    ISUB
+    ALOAD 0
+    GETFIELD bdr.r : I
+    BIPUSH 50
+    ISUB
+    BIPUSH 20
+    BIPUSH 20
+    LDC ">"
+    INVOKESPECIAL ban.<init> (IIIIILjava/lang/String;)V
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L20
+    LINENUMBER 270 L20
+    ALOAD 0
+    ILOAD 2
+    BIPUSH 12
+    ISUB
+    BIPUSH 10
+    IDIV
+    ICONST_1
+    IADD
+    PUTFIELD bdr.maxPages : I
+   L17
+    LINENUMBER 272 L17
+   FRAME FULL [bdr I I] []
+    GOTO L21
+   L1
+    LINENUMBER 275 L1
+   FRAME FULL [bdr] []
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    NEW bea
+    DUP
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    INVOKESPECIAL bea.<init> (Lxl;)V
+    INVOKEVIRTUAL azd.a (Lbcd;)V
+   L21
+    LINENUMBER 277 L21
+   FRAME FULL [bdr] []
+    RETURN
+   L22
+    LOCALVARIABLE i I L11 L17 1
+    LOCALVARIABLE tabCount I L16 L17 2
+    LOCALVARIABLE this Lbdr; L0 L22 0
+    MAXSTACK = 9
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public b()V
+   L0
+    LINENUMBER 281 L0
+    ALOAD 0
+    INVOKESPECIAL bdu.b ()V
+   L1
+    LINENUMBER 283 L1
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    IFNULL L2
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bn : Lxj;
+    IFNULL L2
+   L3
+    LINENUMBER 285 L3
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bo : Lye;
+    ALOAD 0
+    GETFIELD bdr.E : Lbdq;
+    INVOKEVIRTUAL ye.b (Lyo;)V
+   L2
+    LINENUMBER 288 L2
+   FRAME FULL [bdr] []
+    ICONST_0
+    INVOKESTATIC org/lwjgl/input/Keyboard.enableRepeatEvents (Z)V
+   L4
+    LINENUMBER 289 L4
+    RETURN
+   L5
+    LOCALVARIABLE this Lbdr; L0 L5 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x4
+  protected a(CI)V
+   L0
+    LINENUMBER 293 L0
+    GETSTATIC aaf.a : [Laaf;
+    GETSTATIC bdr.w : I
+    AALOAD
+    INVOKEVIRTUAL aaf.hasSearchBar ()Z
+    IFNE L1
+   L2
+    LINENUMBER 295 L2
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.u : Lazw;
+    GETFIELD azw.W : Laza;
+    INVOKESTATIC azw.a (Laza;)Z
+    IFEQ L3
+   L4
+    LINENUMBER 297 L4
+    ALOAD 0
+    GETSTATIC aaf.g : Laaf;
+    INVOKESPECIAL bdr.b (Laaf;)V
+    GOTO L5
+   L3
+    LINENUMBER 301 L3
+   FRAME FULL [bdr I I] []
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    INVOKESPECIAL bdu.a (CI)V
+    GOTO L5
+   L1
+    LINENUMBER 306 L1
+   FRAME FULL [bdr I I] []
+    ALOAD 0
+    GETFIELD bdr.D : Z
+    IFEQ L6
+   L7
+    LINENUMBER 308 L7
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bdr.D : Z
+   L8
+    LINENUMBER 309 L8
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    LDC ""
+    INVOKEVIRTUAL bap.a (Ljava/lang/String;)V
+   L6
+    LINENUMBER 312 L6
+   FRAME FULL [bdr I I] []
+    ALOAD 0
+    ILOAD 2
+    INVOKEVIRTUAL bdr.a (I)Z
+    IFNE L5
+   L9
+    LINENUMBER 314 L9
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bap.a (CI)Z
+    IFEQ L10
+   L11
+    LINENUMBER 316 L11
+    ALOAD 0
+    INVOKESPECIAL bdr.i ()V
+    GOTO L5
+   L10
+    LINENUMBER 320 L10
+   FRAME FULL [bdr I I] []
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    INVOKESPECIAL bdu.a (CI)V
+   L5
+    LINENUMBER 324 L5
+   FRAME FULL [bdr I I] []
+    RETURN
+   L12
+    LOCALVARIABLE this Lbdr; L0 L12 0
+    LOCALVARIABLE par1 C L0 L12 1
+    LOCALVARIABLE par2 I L0 L12 2
+    MAXSTACK = 3
+    MAXLOCALS = 3
+
+  // access flags 0x2
+  private i()V
+   L0
+    LINENUMBER 328 L0
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    CHECKCAST bds
+    ASTORE 1
+   L1
+    LINENUMBER 329 L1
+    ALOAD 1
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.clear ()V
+   L2
+    LINENUMBER 331 L2
+    GETSTATIC aaf.a : [Laaf;
+    GETSTATIC bdr.w : I
+    AALOAD
+    ASTORE 2
+   L3
+    LINENUMBER 332 L3
+    ALOAD 2
+    INVOKEVIRTUAL aaf.hasSearchBar ()Z
+    IFEQ L4
+    ALOAD 2
+    GETSTATIC aaf.g : Laaf;
+    IF_ACMPEQ L4
+   L5
+    LINENUMBER 334 L5
+    ALOAD 2
+    ALOAD 1
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEVIRTUAL aaf.a (Ljava/util/List;)V
+   L6
+    LINENUMBER 335 L6
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL bdr.updateFilteredItems (Lbds;)V
+   L7
+    LINENUMBER 336 L7
+    RETURN
+   L4
+    LINENUMBER 339 L4
+   FRAME FULL [bdr bds aaf] []
+    GETSTATIC abn.e : Lcv;
+    INVOKEVIRTUAL cv.iterator ()Ljava/util/Iterator;
+    ASTORE 3
+   L8
+    LINENUMBER 341 L8
+   FRAME FULL [bdr bds aaf java/util/Iterator] []
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L9
+   L10
+    LINENUMBER 343 L10
+    ALOAD 3
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST abn
+    ASTORE 4
+   L11
+    LINENUMBER 345 L11
+    ALOAD 4
+    IFNULL L12
+    ALOAD 4
+    INVOKEVIRTUAL abn.n_ ()Laaf;
+    IFNULL L12
+   L13
+    LINENUMBER 347 L13
+    ALOAD 4
+    ALOAD 4
+    ACONST_NULL
+    CHECKCAST aaf
+    ALOAD 1
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEVIRTUAL abn.a (Labn;Laaf;Ljava/util/List;)V
+   L12
+    LINENUMBER 349 L12
+   FRAME FULL [bdr bds aaf java/util/Iterator abn] []
+    GOTO L8
+   L9
+    LINENUMBER 350 L9
+   FRAME FULL [bdr bds aaf java/util/Iterator] []
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL bdr.updateFilteredItems (Lbds;)V
+   L14
+    LINENUMBER 351 L14
+    RETURN
+   L15
+    LOCALVARIABLE item Labn; L11 L12 4
+    LOCALVARIABLE this Lbdr; L0 L15 0
+    LOCALVARIABLE containercreative Lbds; L1 L15 1
+    LOCALVARIABLE tab Laaf; L3 L15 2
+    LOCALVARIABLE iterator Ljava/util/Iterator; L8 L15 3
+    MAXSTACK = 4
+    MAXLOCALS = 5
+
+  // access flags 0x2
+  private updateFilteredItems(Lbds;)V
+   L0
+    LINENUMBER 357 L0
+    GETSTATIC aef.b : [Laef;
+    ASTORE 3
+   L1
+    LINENUMBER 358 L1
+    ALOAD 3
+    ARRAYLENGTH
+    ISTORE 4
+   L2
+    LINENUMBER 360 L2
+    ICONST_0
+    ISTORE 5
+   L3
+   FRAME FULL [bdr bds T [Laef; I I] []
+    ILOAD 5
+    ILOAD 4
+    IF_ICMPGE L4
+   L5
+    LINENUMBER 362 L5
+    ALOAD 3
+    ILOAD 5
+    AALOAD
+    ASTORE 6
+   L6
+    LINENUMBER 364 L6
+    ALOAD 6
+    IFNULL L7
+    ALOAD 6
+    GETFIELD aef.C : Laeg;
+    IFNULL L7
+   L8
+    LINENUMBER 366 L8
+    GETSTATIC abq.bR : Laay;
+    ALOAD 6
+    ALOAD 1
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEVIRTUAL aay.a (Laef;Ljava/util/List;)V
+   L7
+    LINENUMBER 360 L7
+   FRAME FULL [bdr bds T [Laef; I I aef] []
+    IINC 5 1
+    GOTO L3
+   L4
+    LINENUMBER 370 L4
+   FRAME FULL [bdr bds T [Laef; I I] []
+    ALOAD 1
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 2
+   L9
+    LINENUMBER 371 L9
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    INVOKEVIRTUAL bap.b ()Ljava/lang/String;
+    INVOKEVIRTUAL java/lang/String.toLowerCase ()Ljava/lang/String;
+    ASTORE 5
+   L10
+    LINENUMBER 373 L10
+   FRAME FULL [bdr bds java/util/Iterator [Laef; I java/lang/String] []
+    ALOAD 2
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L11
+   L12
+    LINENUMBER 375 L12
+    ALOAD 2
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST abp
+    ASTORE 6
+   L13
+    LINENUMBER 376 L13
+    ICONST_0
+    ISTORE 7
+   L14
+    LINENUMBER 377 L14
+    ALOAD 6
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.u : Lazw;
+    GETFIELD azw.w : Z
+    INVOKEVIRTUAL abp.a (Lxl;Z)Ljava/util/List;
+    INVOKEINTERFACE java/util/List.iterator ()Ljava/util/Iterator;
+    ASTORE 8
+   L15
+    LINENUMBER 381 L15
+   FRAME FULL [bdr bds java/util/Iterator [Laef; I java/lang/String abp I java/util/Iterator] []
+    ALOAD 8
+    INVOKEINTERFACE java/util/Iterator.hasNext ()Z
+    IFEQ L16
+   L17
+    LINENUMBER 383 L17
+    ALOAD 8
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST java/lang/String
+    ASTORE 9
+   L18
+    LINENUMBER 385 L18
+    ALOAD 9
+    INVOKEVIRTUAL java/lang/String.toLowerCase ()Ljava/lang/String;
+    ALOAD 5
+    INVOKEVIRTUAL java/lang/String.contains (Ljava/lang/CharSequence;)Z
+    IFNE L19
+   L20
+    LINENUMBER 387 L20
+    GOTO L15
+   L19
+    LINENUMBER 390 L19
+   FRAME FULL [bdr bds java/util/Iterator [Laef; I java/lang/String abp I java/util/Iterator java/lang/String] []
+    ICONST_1
+    ISTORE 7
+   L16
+    LINENUMBER 393 L16
+   FRAME FULL [bdr bds java/util/Iterator [Laef; I java/lang/String abp I java/util/Iterator] []
+    ILOAD 7
+    IFNE L21
+   L22
+    LINENUMBER 395 L22
+    ALOAD 2
+    INVOKEINTERFACE java/util/Iterator.remove ()V
+    GOTO L21
+   L21
+    LINENUMBER 400 L21
+   FRAME FULL [bdr bds java/util/Iterator [Laef; I java/lang/String abp I java/util/Iterator] []
+    GOTO L10
+   L11
+    LINENUMBER 402 L11
+   FRAME FULL [bdr bds java/util/Iterator [Laef; I java/lang/String] []
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bdr.x : F
+   L23
+    LINENUMBER 403 L23
+    ALOAD 1
+    FCONST_0
+    INVOKEVIRTUAL bds.a (F)V
+   L24
+    LINENUMBER 404 L24
+    RETURN
+   L25
+    LOCALVARIABLE enchantment Laef; L6 L7 6
+    LOCALVARIABLE i I L3 L4 5
+    LOCALVARIABLE s Ljava/lang/String; L18 L16 9
+    LOCALVARIABLE itemstack Labp; L13 L21 6
+    LOCALVARIABLE flag Z L14 L21 7
+    LOCALVARIABLE iterator1 Ljava/util/Iterator; L15 L21 8
+    LOCALVARIABLE this Lbdr; L0 L25 0
+    LOCALVARIABLE containercreative Lbds; L0 L25 1
+    LOCALVARIABLE iterator Ljava/util/Iterator; L9 L25 2
+    LOCALVARIABLE aenchantment [Laef; L1 L25 3
+    LOCALVARIABLE j I L2 L25 4
+    LOCALVARIABLE s1 Ljava/lang/String; L10 L25 5
+    MAXSTACK = 3
+    MAXLOCALS = 10
+
+  // access flags 0x4
+  protected b(II)V
+   L0
+    LINENUMBER 408 L0
+    GETSTATIC aaf.a : [Laaf;
+    GETSTATIC bdr.w : I
+    AALOAD
+    ASTORE 3
+   L1
+    LINENUMBER 410 L1
+    ALOAD 3
+    IFNULL L2
+    ALOAD 3
+    INVOKEVIRTUAL aaf.h ()Z
+    IFEQ L2
+   L3
+    LINENUMBER 412 L3
+    SIPUSH 3042
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L4
+    LINENUMBER 413 L4
+    ALOAD 0
+    GETFIELD bdr.q : Lbag;
+    ALOAD 3
+    INVOKEVIRTUAL aaf.c ()Ljava/lang/String;
+    ICONST_0
+    ANEWARRAY java/lang/Object
+    INVOKESTATIC bra.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    BIPUSH 8
+    BIPUSH 6
+    LDC 4210752
+    INVOKEVIRTUAL bag.b (Ljava/lang/String;III)I
+    POP
+   L2
+    LINENUMBER 415 L2
+   FRAME FULL [bdr I I aaf] []
+    RETURN
+   L5
+    LOCALVARIABLE this Lbdr; L0 L5 0
+    LOCALVARIABLE p_146979_1_ I L0 L5 1
+    LOCALVARIABLE p_146979_2_ I L0 L5 2
+    LOCALVARIABLE creativetabs Laaf; L1 L5 3
+    MAXSTACK = 5
+    MAXLOCALS = 4
+
+  // access flags 0x4
+  protected a(III)V
+   L0
+    LINENUMBER 419 L0
+    ILOAD 3
+    IFNE L1
+   L2
+    LINENUMBER 421 L2
+    ILOAD 1
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ISUB
+    ISTORE 4
+   L3
+    LINENUMBER 422 L3
+    ILOAD 2
+    ALOAD 0
+    GETFIELD bdr.r : I
+    ISUB
+    ISTORE 5
+   L4
+    LINENUMBER 423 L4
+    GETSTATIC aaf.a : [Laaf;
+    ASTORE 6
+   L5
+    LINENUMBER 424 L5
+    ALOAD 6
+    ARRAYLENGTH
+    ISTORE 7
+   L6
+    LINENUMBER 426 L6
+    ICONST_0
+    ISTORE 8
+   L7
+   FRAME FULL [bdr I I I I I [Laaf; I I] []
+    ILOAD 8
+    ILOAD 7
+    IF_ICMPGE L1
+   L8
+    LINENUMBER 428 L8
+    ALOAD 6
+    ILOAD 8
+    AALOAD
+    ASTORE 9
+   L9
+    LINENUMBER 430 L9
+    ALOAD 9
+    IFNULL L10
+    ALOAD 0
+    ALOAD 9
+    ILOAD 4
+    ILOAD 5
+    INVOKEVIRTUAL bdr.a (Laaf;II)Z
+    IFEQ L10
+   L11
+    LINENUMBER 432 L11
+    RETURN
+   L10
+    LINENUMBER 426 L10
+   FRAME FULL [bdr I I I I I [Laaf; I I aaf] []
+    IINC 8 1
+    GOTO L7
+   L1
+    LINENUMBER 437 L1
+   FRAME FULL [bdr I I I] []
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKESPECIAL bdu.a (III)V
+   L12
+    LINENUMBER 438 L12
+    RETURN
+   L13
+    LOCALVARIABLE creativetabs Laaf; L9 L10 9
+    LOCALVARIABLE k1 I L7 L1 8
+    LOCALVARIABLE l I L3 L1 4
+    LOCALVARIABLE i1 I L4 L1 5
+    LOCALVARIABLE acreativetabs [Laaf; L5 L1 6
+    LOCALVARIABLE j1 I L6 L1 7
+    LOCALVARIABLE this Lbdr; L0 L13 0
+    LOCALVARIABLE par1 I L0 L13 1
+    LOCALVARIABLE par2 I L0 L13 2
+    LOCALVARIABLE par3 I L0 L13 3
+    MAXSTACK = 4
+    MAXLOCALS = 10
+
+  // access flags 0x4
+  protected b(III)V
+   L0
+    LINENUMBER 442 L0
+    ILOAD 3
+    IFNE L1
+   L2
+    LINENUMBER 444 L2
+    ILOAD 1
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ISUB
+    ISTORE 4
+   L3
+    LINENUMBER 445 L3
+    ILOAD 2
+    ALOAD 0
+    GETFIELD bdr.r : I
+    ISUB
+    ISTORE 5
+   L4
+    LINENUMBER 446 L4
+    GETSTATIC aaf.a : [Laaf;
+    ASTORE 6
+   L5
+    LINENUMBER 447 L5
+    ALOAD 6
+    ARRAYLENGTH
+    ISTORE 7
+   L6
+    LINENUMBER 449 L6
+    ICONST_0
+    ISTORE 8
+   L7
+   FRAME FULL [bdr I I I I I [Laaf; I I] []
+    ILOAD 8
+    ILOAD 7
+    IF_ICMPGE L1
+   L8
+    LINENUMBER 451 L8
+    ALOAD 6
+    ILOAD 8
+    AALOAD
+    ASTORE 9
+   L9
+    LINENUMBER 453 L9
+    ALOAD 9
+    IFNULL L10
+    ALOAD 0
+    ALOAD 9
+    ILOAD 4
+    ILOAD 5
+    INVOKEVIRTUAL bdr.a (Laaf;II)Z
+    IFEQ L10
+   L11
+    LINENUMBER 455 L11
+    ALOAD 0
+    ALOAD 9
+    INVOKESPECIAL bdr.b (Laaf;)V
+   L12
+    LINENUMBER 456 L12
+    RETURN
+   L10
+    LINENUMBER 449 L10
+   FRAME FULL [bdr I I I I I [Laaf; I I aaf] []
+    IINC 8 1
+    GOTO L7
+   L1
+    LINENUMBER 461 L1
+   FRAME FULL [bdr I I I] []
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKESPECIAL bdu.b (III)V
+   L13
+    LINENUMBER 462 L13
+    RETURN
+   L14
+    LOCALVARIABLE creativetabs Laaf; L9 L10 9
+    LOCALVARIABLE k1 I L7 L1 8
+    LOCALVARIABLE l I L3 L1 4
+    LOCALVARIABLE i1 I L4 L1 5
+    LOCALVARIABLE acreativetabs [Laaf; L5 L1 6
+    LOCALVARIABLE j1 I L6 L1 7
+    LOCALVARIABLE this Lbdr; L0 L14 0
+    LOCALVARIABLE p_146286_1_ I L0 L14 1
+    LOCALVARIABLE p_146286_2_ I L0 L14 2
+    LOCALVARIABLE p_146286_3_ I L0 L14 3
+    MAXSTACK = 4
+    MAXLOCALS = 10
+
+  // access flags 0x2
+  private p()Z
+   L0
+    LINENUMBER 466 L0
+    GETSTATIC aaf.a : [Laaf;
+    GETSTATIC bdr.w : I
+    AALOAD
+    IFNONNULL L1
+    ICONST_0
+    IRETURN
+   L1
+    LINENUMBER 467 L1
+   FRAME FULL [bdr] []
+    GETSTATIC bdr.w : I
+    GETSTATIC aaf.m : Laaf;
+    INVOKEVIRTUAL aaf.a ()I
+    IF_ICMPEQ L2
+    GETSTATIC aaf.a : [Laaf;
+    GETSTATIC bdr.w : I
+    AALOAD
+    INVOKEVIRTUAL aaf.j ()Z
+    IFEQ L2
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    CHECKCAST bds
+    INVOKEVIRTUAL bds.e ()Z
+    IFEQ L2
+    ICONST_1
+    GOTO L3
+   L2
+   FRAME FULL [bdr] []
+    ICONST_0
+   L3
+   FRAME FULL [bdr] [I]
+    IRETURN
+   L4
+    LOCALVARIABLE this Lbdr; L0 L4 0
+    MAXSTACK = 2
+    MAXLOCALS = 1
+
+  // access flags 0x2
+  private b(Laaf;)V
+   L0
+    LINENUMBER 472 L0
+    ALOAD 1
+    IFNONNULL L1
+    RETURN
+   L1
+    LINENUMBER 473 L1
+   FRAME FULL [bdr aaf] []
+    GETSTATIC bdr.w : I
+    ISTORE 2
+   L2
+    LINENUMBER 474 L2
+    ALOAD 1
+    INVOKEVIRTUAL aaf.a ()I
+    PUTSTATIC bdr.w : I
+   L3
+    LINENUMBER 475 L3
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    CHECKCAST bds
+    ASTORE 3
+   L4
+    LINENUMBER 476 L4
+    ALOAD 0
+    GETFIELD bdr.s : Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.clear ()V
+   L5
+    LINENUMBER 477 L5
+    ALOAD 3
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.clear ()V
+   L6
+    LINENUMBER 478 L6
+    ALOAD 1
+    ALOAD 3
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEVIRTUAL aaf.a (Ljava/util/List;)V
+   L7
+    LINENUMBER 480 L7
+    ALOAD 1
+    GETSTATIC aaf.m : Laaf;
+    IF_ACMPNE L8
+   L9
+    LINENUMBER 482 L9
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    GETFIELD bje.bo : Lye;
+    ASTORE 4
+   L10
+    LINENUMBER 484 L10
+    ALOAD 0
+    GETFIELD bdr.B : Ljava/util/List;
+    IFNONNULL L11
+   L12
+    LINENUMBER 486 L12
+    ALOAD 0
+    ALOAD 3
+    GETFIELD bds.c : Ljava/util/List;
+    PUTFIELD bdr.B : Ljava/util/List;
+   L11
+    LINENUMBER 489 L11
+   FRAME FULL [bdr aaf I bds ye] []
+    ALOAD 3
+    NEW java/util/ArrayList
+    DUP
+    INVOKESPECIAL java/util/ArrayList.<init> ()V
+    PUTFIELD bds.c : Ljava/util/List;
+   L13
+    LINENUMBER 491 L13
+    ICONST_0
+    ISTORE 5
+   L14
+   FRAME FULL [bdr aaf I bds ye I] []
+    ILOAD 5
+    ALOAD 4
+    GETFIELD ye.c : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L15
+   L16
+    LINENUMBER 493 L16
+    NEW bdt
+    DUP
+    ALOAD 0
+    ALOAD 4
+    GETFIELD ye.c : Ljava/util/List;
+    ILOAD 5
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST zk
+    ILOAD 5
+    INVOKESPECIAL bdt.<init> (Lbdr;Lzk;I)V
+    ASTORE 6
+   L17
+    LINENUMBER 494 L17
+    ALOAD 3
+    GETFIELD bds.c : Ljava/util/List;
+    ALOAD 6
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L18
+    LINENUMBER 499 L18
+    ILOAD 5
+    ICONST_5
+    IF_ICMPLT L19
+    ILOAD 5
+    BIPUSH 9
+    IF_ICMPGE L19
+   L20
+    LINENUMBER 501 L20
+    ILOAD 5
+    ICONST_5
+    ISUB
+    ISTORE 7
+   L21
+    LINENUMBER 502 L21
+    ILOAD 7
+    ICONST_2
+    IDIV
+    ISTORE 8
+   L22
+    LINENUMBER 503 L22
+    ILOAD 7
+    ICONST_2
+    IREM
+    ISTORE 9
+   L23
+    LINENUMBER 504 L23
+    ALOAD 6
+    BIPUSH 9
+    ILOAD 8
+    BIPUSH 54
+    IMUL
+    IADD
+    PUTFIELD bdt.h : I
+   L24
+    LINENUMBER 505 L24
+    ALOAD 6
+    BIPUSH 6
+    ILOAD 9
+    BIPUSH 27
+    IMUL
+    IADD
+    PUTFIELD bdt.i : I
+    GOTO L25
+   L19
+    LINENUMBER 507 L19
+   FRAME FULL [bdr aaf I bds ye I bdt] []
+    ILOAD 5
+    IFLT L26
+    ILOAD 5
+    ICONST_5
+    IF_ICMPGE L26
+   L27
+    LINENUMBER 509 L27
+    ALOAD 6
+    SIPUSH -2000
+    PUTFIELD bdt.i : I
+   L28
+    LINENUMBER 510 L28
+    ALOAD 6
+    SIPUSH -2000
+    PUTFIELD bdt.h : I
+    GOTO L25
+   L26
+    LINENUMBER 512 L26
+   FRAME FULL [bdr aaf I bds ye I bdt] []
+    ILOAD 5
+    ALOAD 4
+    GETFIELD ye.c : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L25
+   L29
+    LINENUMBER 514 L29
+    ILOAD 5
+    BIPUSH 9
+    ISUB
+    ISTORE 7
+   L30
+    LINENUMBER 515 L30
+    ILOAD 7
+    BIPUSH 9
+    IREM
+    ISTORE 8
+   L31
+    LINENUMBER 516 L31
+    ILOAD 7
+    BIPUSH 9
+    IDIV
+    ISTORE 9
+   L32
+    LINENUMBER 517 L32
+    ALOAD 6
+    BIPUSH 9
+    ILOAD 8
+    BIPUSH 18
+    IMUL
+    IADD
+    PUTFIELD bdt.h : I
+   L33
+    LINENUMBER 519 L33
+    ILOAD 5
+    BIPUSH 36
+    IF_ICMPLT L34
+   L35
+    LINENUMBER 521 L35
+    ALOAD 6
+    BIPUSH 112
+    PUTFIELD bdt.i : I
+    GOTO L25
+   L34
+    LINENUMBER 525 L34
+   FRAME FULL [bdr aaf I bds ye I bdt I I I] []
+    ALOAD 6
+    BIPUSH 54
+    ILOAD 9
+    BIPUSH 18
+    IMUL
+    IADD
+    PUTFIELD bdt.i : I
+   L25
+    LINENUMBER 491 L25
+   FRAME FULL [bdr aaf I bds ye I bdt] []
+    IINC 5 1
+    GOTO L14
+   L15
+    LINENUMBER 530 L15
+   FRAME FULL [bdr aaf I bds ye I] []
+    ALOAD 0
+    NEW zk
+    DUP
+    GETSTATIC bdr.v : Lpu;
+    ICONST_0
+    SIPUSH 173
+    BIPUSH 112
+    INVOKESPECIAL zk.<init> (Lpo;III)V
+    PUTFIELD bdr.C : Lzk;
+   L36
+    LINENUMBER 531 L36
+    ALOAD 3
+    GETFIELD bds.c : Ljava/util/List;
+    ALOAD 0
+    GETFIELD bdr.C : Lzk;
+    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z
+    POP
+   L37
+    LINENUMBER 532 L37
+    GOTO L38
+   L8
+    LINENUMBER 533 L8
+   FRAME FULL [bdr aaf I bds] []
+    ILOAD 2
+    GETSTATIC aaf.m : Laaf;
+    INVOKEVIRTUAL aaf.a ()I
+    IF_ICMPNE L38
+   L39
+    LINENUMBER 535 L39
+    ALOAD 3
+    ALOAD 0
+    GETFIELD bdr.B : Ljava/util/List;
+    PUTFIELD bds.c : Ljava/util/List;
+   L40
+    LINENUMBER 536 L40
+    ALOAD 0
+    ACONST_NULL
+    PUTFIELD bdr.B : Ljava/util/List;
+   L38
+    LINENUMBER 539 L38
+   FRAME FULL [bdr aaf I bds] []
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    IFNULL L41
+   L42
+    LINENUMBER 541 L42
+    ALOAD 1
+    INVOKEVIRTUAL aaf.hasSearchBar ()Z
+    IFEQ L43
+   L44
+    LINENUMBER 543 L44
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_1
+    INVOKEVIRTUAL bap.e (Z)V
+   L45
+    LINENUMBER 544 L45
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_0
+    INVOKEVIRTUAL bap.d (Z)V
+   L46
+    LINENUMBER 545 L46
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_1
+    INVOKEVIRTUAL bap.b (Z)V
+   L47
+    LINENUMBER 546 L47
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    LDC ""
+    INVOKEVIRTUAL bap.a (Ljava/lang/String;)V
+   L48
+    LINENUMBER 547 L48
+    ALOAD 0
+    INVOKESPECIAL bdr.i ()V
+    GOTO L41
+   L43
+    LINENUMBER 551 L43
+   FRAME FULL [bdr aaf I bds] []
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_0
+    INVOKEVIRTUAL bap.e (Z)V
+   L49
+    LINENUMBER 552 L49
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_1
+    INVOKEVIRTUAL bap.d (Z)V
+   L50
+    LINENUMBER 553 L50
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    ICONST_0
+    INVOKEVIRTUAL bap.b (Z)V
+   L41
+    LINENUMBER 557 L41
+   FRAME FULL [bdr aaf I bds] []
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bdr.x : F
+   L51
+    LINENUMBER 558 L51
+    ALOAD 3
+    FCONST_0
+    INVOKEVIRTUAL bds.a (F)V
+   L52
+    LINENUMBER 559 L52
+    RETURN
+   L53
+    LOCALVARIABLE k I L21 L19 7
+    LOCALVARIABLE l I L22 L19 8
+    LOCALVARIABLE i1 I L23 L19 9
+    LOCALVARIABLE creativeslot Lbdt; L17 L25 6
+    LOCALVARIABLE k I L30 L25 7
+    LOCALVARIABLE l I L31 L25 8
+    LOCALVARIABLE i1 I L32 L25 9
+    LOCALVARIABLE j I L14 L15 5
+    LOCALVARIABLE container Lye; L10 L37 4
+    LOCALVARIABLE this Lbdr; L0 L53 0
+    LOCALVARIABLE p_147050_1_ Laaf; L0 L53 1
+    LOCALVARIABLE i I L2 L53 2
+    LOCALVARIABLE containercreative Lbds; L4 L53 3
+    MAXSTACK = 7
+    MAXLOCALS = 10
+
+  // access flags 0x1
+  public d()V
+   L0
+    LINENUMBER 563 L0
+    ALOAD 0
+    INVOKESPECIAL bdu.d ()V
+   L1
+    LINENUMBER 564 L1
+    INVOKESTATIC org/lwjgl/input/Mouse.getEventDWheel ()I
+    ISTORE 1
+   L2
+    LINENUMBER 566 L2
+    ILOAD 1
+    IFEQ L3
+    ALOAD 0
+    INVOKESPECIAL bdr.p ()Z
+    IFEQ L3
+   L4
+    LINENUMBER 568 L4
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    CHECKCAST bds
+    GETFIELD bds.a : Ljava/util/List;
+    INVOKEINTERFACE java/util/List.size ()I
+    BIPUSH 9
+    IDIV
+    ICONST_5
+    ISUB
+    ICONST_1
+    IADD
+    ISTORE 2
+   L5
+    LINENUMBER 570 L5
+    ILOAD 1
+    IFLE L6
+   L7
+    LINENUMBER 572 L7
+    ICONST_1
+    ISTORE 1
+   L6
+    LINENUMBER 575 L6
+   FRAME FULL [bdr I I] []
+    ILOAD 1
+    IFGE L8
+   L9
+    LINENUMBER 577 L9
+    ICONST_M1
+    ISTORE 1
+   L8
+    LINENUMBER 580 L8
+   FRAME FULL [bdr I I] []
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bdr.x : F
+    F2D
+    ILOAD 1
+    I2D
+    ILOAD 2
+    I2D
+    DDIV
+    DSUB
+    D2F
+    PUTFIELD bdr.x : F
+   L10
+    LINENUMBER 582 L10
+    ALOAD 0
+    GETFIELD bdr.x : F
+    FCONST_0
+    FCMPG
+    IFGE L11
+   L12
+    LINENUMBER 584 L12
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bdr.x : F
+   L11
+    LINENUMBER 587 L11
+   FRAME FULL [bdr I I] []
+    ALOAD 0
+    GETFIELD bdr.x : F
+    FCONST_1
+    FCMPL
+    IFLE L13
+   L14
+    LINENUMBER 589 L14
+    ALOAD 0
+    FCONST_1
+    PUTFIELD bdr.x : F
+   L13
+    LINENUMBER 592 L13
+   FRAME FULL [bdr I I] []
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    CHECKCAST bds
+    ALOAD 0
+    GETFIELD bdr.x : F
+    INVOKEVIRTUAL bds.a (F)V
+   L3
+    LINENUMBER 594 L3
+   FRAME FULL [bdr I] []
+    RETURN
+   L15
+    LOCALVARIABLE j I L5 L3 2
+    LOCALVARIABLE this Lbdr; L0 L15 0
+    LOCALVARIABLE i I L2 L15 1
+    MAXSTACK = 7
+    MAXLOCALS = 3
+
+  // access flags 0x1
+  public a(IIF)V
+   L0
+    LINENUMBER 598 L0
+    ICONST_0
+    INVOKESTATIC org/lwjgl/input/Mouse.isButtonDown (I)Z
+    ISTORE 4
+   L1
+    LINENUMBER 599 L1
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ISTORE 5
+   L2
+    LINENUMBER 600 L2
+    ALOAD 0
+    GETFIELD bdr.r : I
+    ISTORE 6
+   L3
+    LINENUMBER 601 L3
+    ILOAD 5
+    SIPUSH 175
+    IADD
+    ISTORE 7
+   L4
+    LINENUMBER 602 L4
+    ILOAD 6
+    BIPUSH 18
+    IADD
+    ISTORE 8
+   L5
+    LINENUMBER 603 L5
+    ILOAD 7
+    BIPUSH 14
+    IADD
+    ISTORE 9
+   L6
+    LINENUMBER 604 L6
+    ILOAD 8
+    BIPUSH 112
+    IADD
+    ISTORE 10
+   L7
+    LINENUMBER 606 L7
+    ALOAD 0
+    GETFIELD bdr.z : Z
+    IFNE L8
+    ILOAD 4
+    IFEQ L8
+    ILOAD 1
+    ILOAD 7
+    IF_ICMPLT L8
+    ILOAD 2
+    ILOAD 8
+    IF_ICMPLT L8
+    ILOAD 1
+    ILOAD 9
+    IF_ICMPGE L8
+    ILOAD 2
+    ILOAD 10
+    IF_ICMPGE L8
+   L9
+    LINENUMBER 608 L9
+    ALOAD 0
+    ALOAD 0
+    INVOKESPECIAL bdr.p ()Z
+    PUTFIELD bdr.y : Z
+   L8
+    LINENUMBER 611 L8
+   FRAME FULL [bdr I I F I I I I I I I] []
+    ILOAD 4
+    IFNE L10
+   L11
+    LINENUMBER 613 L11
+    ALOAD 0
+    ICONST_0
+    PUTFIELD bdr.y : Z
+   L10
+    LINENUMBER 616 L10
+   FRAME FULL [bdr I I F I I I I I I I] []
+    ALOAD 0
+    ILOAD 4
+    PUTFIELD bdr.z : Z
+   L12
+    LINENUMBER 618 L12
+    ALOAD 0
+    GETFIELD bdr.y : Z
+    IFEQ L13
+   L14
+    LINENUMBER 620 L14
+    ALOAD 0
+    ILOAD 2
+    ILOAD 8
+    ISUB
+    I2F
+    LDC 7.5
+    FSUB
+    ILOAD 10
+    ILOAD 8
+    ISUB
+    I2F
+    LDC 15.0
+    FSUB
+    FDIV
+    PUTFIELD bdr.x : F
+   L15
+    LINENUMBER 622 L15
+    ALOAD 0
+    GETFIELD bdr.x : F
+    FCONST_0
+    FCMPG
+    IFGE L16
+   L17
+    LINENUMBER 624 L17
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bdr.x : F
+   L16
+    LINENUMBER 627 L16
+   FRAME FULL [bdr I I F I I I I I I I] []
+    ALOAD 0
+    GETFIELD bdr.x : F
+    FCONST_1
+    FCMPL
+    IFLE L18
+   L19
+    LINENUMBER 629 L19
+    ALOAD 0
+    FCONST_1
+    PUTFIELD bdr.x : F
+   L18
+    LINENUMBER 632 L18
+   FRAME FULL [bdr I I F I I I I I I I] []
+    ALOAD 0
+    GETFIELD bdr.h : Lye;
+    CHECKCAST bds
+    ALOAD 0
+    GETFIELD bdr.x : F
+    INVOKEVIRTUAL bds.a (F)V
+   L13
+    LINENUMBER 635 L13
+   FRAME FULL [bdr I I F I I I I I I I] []
+    ALOAD 0
+    ILOAD 1
+    ILOAD 2
+    FLOAD 3
+    INVOKESPECIAL bdu.a (IIF)V
+   L20
+    LINENUMBER 636 L20
+    GETSTATIC aaf.a : [Laaf;
+    ASTORE 11
+   L21
+    LINENUMBER 637 L21
+    GETSTATIC bdr.tabPage : I
+    BIPUSH 10
+    IMUL
+    ISTORE 12
+   L22
+    LINENUMBER 638 L22
+    ALOAD 11
+    ARRAYLENGTH
+    GETSTATIC bdr.tabPage : I
+    ICONST_1
+    IADD
+    BIPUSH 10
+    IMUL
+    ICONST_2
+    IADD
+    INVOKESTATIC java/lang/Math.min (II)I
+    ISTORE 13
+   L23
+    LINENUMBER 639 L23
+    GETSTATIC bdr.tabPage : I
+    IFEQ L24
+    IINC 12 2
+   L24
+    LINENUMBER 640 L24
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I] []
+    ICONST_0
+    ISTORE 14
+   L25
+    LINENUMBER 642 L25
+    ILOAD 12
+    ISTORE 15
+   L26
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I I I] []
+    ILOAD 15
+    ILOAD 13
+    IF_ICMPGE L27
+   L28
+    LINENUMBER 644 L28
+    ALOAD 11
+    ILOAD 15
+    AALOAD
+    ASTORE 16
+   L29
+    LINENUMBER 646 L29
+    ALOAD 16
+    IFNONNULL L30
+    GOTO L31
+   L30
+    LINENUMBER 647 L30
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I I I aaf] []
+    ALOAD 0
+    ALOAD 16
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bdr.b (Laaf;II)Z
+    IFEQ L31
+   L32
+    LINENUMBER 649 L32
+    ICONST_1
+    ISTORE 14
+   L33
+    LINENUMBER 650 L33
+    GOTO L27
+   L31
+    LINENUMBER 642 L31
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I I I aaf] []
+    IINC 15 1
+    GOTO L26
+   L27
+    LINENUMBER 654 L27
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I I I] []
+    ILOAD 14
+    IFNE L34
+    ALOAD 0
+    GETSTATIC aaf.g : Laaf;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bdr.b (Laaf;II)Z
+    IFEQ L34
+   L35
+    LINENUMBER 656 L35
+    ALOAD 0
+    GETSTATIC aaf.m : Laaf;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bdr.b (Laaf;II)Z
+    POP
+   L34
+    LINENUMBER 659 L34
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I I I] []
+    ALOAD 0
+    GETFIELD bdr.C : Lzk;
+    IFNULL L36
+    GETSTATIC bdr.w : I
+    GETSTATIC aaf.m : Laaf;
+    INVOKEVIRTUAL aaf.a ()I
+    IF_ICMPNE L36
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bdr.C : Lzk;
+    GETFIELD zk.h : I
+    ALOAD 0
+    GETFIELD bdr.C : Lzk;
+    GETFIELD zk.i : I
+    BIPUSH 16
+    BIPUSH 16
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bdr.c (IIIIII)Z
+    IFEQ L36
+   L37
+    LINENUMBER 661 L37
+    ALOAD 0
+    LDC "inventory.binSlot"
+    ICONST_0
+    ANEWARRAY java/lang/Object
+    INVOKESTATIC bra.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    ILOAD 1
+    ILOAD 2
+    INVOKEVIRTUAL bdr.a (Ljava/lang/String;II)V
+   L36
+    LINENUMBER 664 L36
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I I I] []
+    ALOAD 0
+    GETFIELD bdr.maxPages : I
+    IFEQ L38
+   L39
+    LINENUMBER 666 L39
+    LDC "%d / %d"
+    ICONST_2
+    ANEWARRAY java/lang/Object
+    DUP
+    ICONST_0
+    GETSTATIC bdr.tabPage : I
+    ICONST_1
+    IADD
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    AASTORE
+    DUP
+    ICONST_1
+    ALOAD 0
+    GETFIELD bdr.maxPages : I
+    ICONST_1
+    IADD
+    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;
+    AASTORE
+    INVOKESTATIC java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    ASTORE 15
+   L40
+    LINENUMBER 667 L40
+    ALOAD 0
+    GETFIELD bdr.q : Lbag;
+    ALOAD 15
+    INVOKEVIRTUAL bag.a (Ljava/lang/String;)I
+    ISTORE 16
+   L41
+    LINENUMBER 668 L41
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L42
+    LINENUMBER 669 L42
+    ALOAD 0
+    LDC 300.0
+    PUTFIELD bdr.e : F
+   L43
+    LINENUMBER 670 L43
+    GETSTATIC bdr.j : Lbnq;
+    LDC 300.0
+    PUTFIELD bnq.f : F
+   L44
+    LINENUMBER 671 L44
+    ALOAD 0
+    GETFIELD bdr.q : Lbag;
+    ALOAD 15
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ALOAD 0
+    GETFIELD bdr.f : I
+    ICONST_2
+    IDIV
+    IADD
+    ILOAD 16
+    ICONST_2
+    IDIV
+    ISUB
+    ALOAD 0
+    GETFIELD bdr.r : I
+    BIPUSH 44
+    ISUB
+    ICONST_M1
+    INVOKEVIRTUAL bag.b (Ljava/lang/String;III)I
+    POP
+   L45
+    LINENUMBER 672 L45
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bdr.e : F
+   L46
+    LINENUMBER 673 L46
+    GETSTATIC bdr.j : Lbnq;
+    FCONST_0
+    PUTFIELD bnq.f : F
+   L38
+    LINENUMBER 676 L38
+   FRAME FULL [bdr I I F I I I I I I I [Laaf; I I I] []
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L47
+    LINENUMBER 677 L47
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L48
+    LINENUMBER 678 L48
+    RETURN
+   L49
+    LOCALVARIABLE creativetabs Laaf; L29 L31 16
+    LOCALVARIABLE j2 I L26 L27 15
+    LOCALVARIABLE page Ljava/lang/String; L40 L38 15
+    LOCALVARIABLE width I L41 L38 16
+    LOCALVARIABLE this Lbdr; L0 L49 0
+    LOCALVARIABLE par1 I L0 L49 1
+    LOCALVARIABLE par2 I L0 L49 2
+    LOCALVARIABLE par3 F L0 L49 3
+    LOCALVARIABLE flag Z L1 L49 4
+    LOCALVARIABLE k I L2 L49 5
+    LOCALVARIABLE l I L3 L49 6
+    LOCALVARIABLE i1 I L4 L49 7
+    LOCALVARIABLE j1 I L5 L49 8
+    LOCALVARIABLE k1 I L6 L49 9
+    LOCALVARIABLE l1 I L7 L49 10
+    LOCALVARIABLE acreativetabs [Laaf; L21 L49 11
+    LOCALVARIABLE start I L22 L49 12
+    LOCALVARIABLE i2 I L23 L49 13
+    LOCALVARIABLE rendered Z L25 L49 14
+    MAXSTACK = 7
+    MAXLOCALS = 17
+
+  // access flags 0x4
+  protected a(Labp;II)V
+   L0
+    LINENUMBER 682 L0
+    GETSTATIC bdr.w : I
+    GETSTATIC aaf.g : Laaf;
+    INVOKEVIRTUAL aaf.a ()I
+    IF_ICMPNE L1
+   L2
+    LINENUMBER 684 L2
+    ALOAD 1
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.u : Lazw;
+    GETFIELD azw.w : Z
+    INVOKEVIRTUAL abp.a (Lxl;Z)Ljava/util/List;
+    ASTORE 4
+   L3
+    LINENUMBER 685 L3
+    ALOAD 1
+    INVOKEVIRTUAL abp.b ()Labn;
+    INVOKEVIRTUAL abn.n_ ()Laaf;
+    ASTORE 5
+   L4
+    LINENUMBER 687 L4
+    ALOAD 5
+    IFNONNULL L5
+    ALOAD 1
+    INVOKEVIRTUAL abp.b ()Labn;
+    GETSTATIC abq.bR : Laay;
+    IF_ACMPNE L5
+   L6
+    LINENUMBER 689 L6
+    ALOAD 1
+    INVOKESTATIC aeh.a (Labp;)Ljava/util/Map;
+    ASTORE 6
+   L7
+    LINENUMBER 691 L7
+    ALOAD 6
+    INVOKEINTERFACE java/util/Map.size ()I
+    ICONST_1
+    IF_ICMPNE L5
+   L8
+    LINENUMBER 693 L8
+    GETSTATIC aef.b : [Laef;
+    ALOAD 6
+    INVOKEINTERFACE java/util/Map.keySet ()Ljava/util/Set;
+    INVOKEINTERFACE java/util/Set.iterator ()Ljava/util/Iterator;
+    INVOKEINTERFACE java/util/Iterator.next ()Ljava/lang/Object;
+    CHECKCAST java/lang/Integer
+    INVOKEVIRTUAL java/lang/Integer.intValue ()I
+    AALOAD
+    ASTORE 7
+   L9
+    LINENUMBER 694 L9
+    GETSTATIC aaf.a : [Laaf;
+    ASTORE 8
+   L10
+    LINENUMBER 695 L10
+    ALOAD 8
+    ARRAYLENGTH
+    ISTORE 9
+   L11
+    LINENUMBER 697 L11
+    ICONST_0
+    ISTORE 10
+   L12
+   FRAME FULL [bdr abp I I java/util/List aaf java/util/Map aef [Laaf; I I] []
+    ILOAD 10
+    ILOAD 9
+    IF_ICMPGE L5
+   L13
+    LINENUMBER 699 L13
+    ALOAD 8
+    ILOAD 10
+    AALOAD
+    ASTORE 11
+   L14
+    LINENUMBER 701 L14
+    ALOAD 11
+    ALOAD 7
+    GETFIELD aef.C : Laeg;
+    INVOKEVIRTUAL aaf.a (Laeg;)Z
+    IFEQ L15
+   L16
+    LINENUMBER 703 L16
+    ALOAD 11
+    ASTORE 5
+   L17
+    LINENUMBER 704 L17
+    GOTO L5
+   L15
+    LINENUMBER 697 L15
+   FRAME FULL [bdr abp I I java/util/List aaf java/util/Map aef [Laaf; I I aaf] []
+    IINC 10 1
+    GOTO L12
+   L5
+    LINENUMBER 710 L5
+   FRAME FULL [bdr abp I I java/util/List aaf] []
+    ALOAD 5
+    IFNULL L18
+   L19
+    LINENUMBER 712 L19
+    ALOAD 4
+    ICONST_1
+    NEW java/lang/StringBuilder
+    DUP
+    INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+    LDC ""
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    GETSTATIC a.r : La;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    GETSTATIC a.j : La;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ALOAD 5
+    INVOKEVIRTUAL aaf.c ()Ljava/lang/String;
+    ICONST_0
+    ANEWARRAY java/lang/Object
+    INVOKESTATIC bra.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+    INVOKEINTERFACE java/util/List.add (ILjava/lang/Object;)V
+   L18
+    LINENUMBER 715 L18
+   FRAME FULL [bdr abp I I java/util/List aaf] []
+    ICONST_0
+    ISTORE 6
+   L20
+   FRAME FULL [bdr abp I I java/util/List aaf I] []
+    ILOAD 6
+    ALOAD 4
+    INVOKEINTERFACE java/util/List.size ()I
+    IF_ICMPGE L21
+   L22
+    LINENUMBER 717 L22
+    ILOAD 6
+    IFNE L23
+   L24
+    LINENUMBER 719 L24
+    ALOAD 4
+    ILOAD 6
+    NEW java/lang/StringBuilder
+    DUP
+    INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+    ALOAD 1
+    INVOKEVIRTUAL abp.w ()Lacc;
+    GETFIELD acc.e : La;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ALOAD 4
+    ILOAD 6
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST java/lang/String
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+    INVOKEINTERFACE java/util/List.set (ILjava/lang/Object;)Ljava/lang/Object;
+    POP
+    GOTO L25
+   L23
+    LINENUMBER 723 L23
+   FRAME FULL [bdr abp I I java/util/List aaf I] []
+    ALOAD 4
+    ILOAD 6
+    NEW java/lang/StringBuilder
+    DUP
+    INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+    GETSTATIC a.h : La;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ALOAD 4
+    ILOAD 6
+    INVOKEINTERFACE java/util/List.get (I)Ljava/lang/Object;
+    CHECKCAST java/lang/String
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+    INVOKEINTERFACE java/util/List.set (ILjava/lang/Object;)Ljava/lang/Object;
+    POP
+   L25
+    LINENUMBER 715 L25
+   FRAME FULL [bdr abp I I java/util/List aaf I] []
+    IINC 6 1
+    GOTO L20
+   L21
+    LINENUMBER 727 L21
+   FRAME FULL [bdr abp I I java/util/List aaf I] []
+    ALOAD 0
+    ALOAD 4
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL bdr.a (Ljava/util/List;II)V
+   L26
+    LINENUMBER 728 L26
+    GOTO L27
+   L1
+    LINENUMBER 731 L1
+   FRAME FULL [bdr abp I I] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    INVOKESPECIAL bdu.a (Labp;II)V
+   L27
+    LINENUMBER 733 L27
+   FRAME FULL [bdr abp I I] []
+    RETURN
+   L28
+    LOCALVARIABLE creativetabs1 Laaf; L14 L15 11
+    LOCALVARIABLE l I L12 L5 10
+    LOCALVARIABLE enchantment Laef; L9 L5 7
+    LOCALVARIABLE acreativetabs [Laaf; L10 L5 8
+    LOCALVARIABLE k I L11 L5 9
+    LOCALVARIABLE map Ljava/util/Map; L7 L5 6
+    LOCALVARIABLE i1 I L20 L21 6
+    LOCALVARIABLE list Ljava/util/List; L3 L26 4
+    LOCALVARIABLE creativetabs Laaf; L4 L26 5
+    LOCALVARIABLE this Lbdr; L0 L28 0
+    LOCALVARIABLE p_146285_1_ Labp; L0 L28 1
+    LOCALVARIABLE p_146285_2_ I L0 L28 2
+    LOCALVARIABLE p_146285_3_ I L0 L28 3
+    MAXSTACK = 5
+    MAXLOCALS = 12
+
+  // access flags 0x4
+  protected a(FII)V
+   L0
+    LINENUMBER 737 L0
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L1
+    LINENUMBER 738 L1
+    INVOKESTATIC azb.c ()V
+   L2
+    LINENUMBER 739 L2
+    GETSTATIC aaf.a : [Laaf;
+    GETSTATIC bdr.w : I
+    AALOAD
+    ASTORE 4
+   L3
+    LINENUMBER 740 L3
+    GETSTATIC aaf.a : [Laaf;
+    ASTORE 5
+   L4
+    LINENUMBER 741 L4
+    ALOAD 5
+    ARRAYLENGTH
+    ISTORE 6
+   L5
+    LINENUMBER 744 L5
+    GETSTATIC bdr.tabPage : I
+    BIPUSH 10
+    IMUL
+    ISTORE 8
+   L6
+    LINENUMBER 745 L6
+    ALOAD 5
+    ARRAYLENGTH
+    GETSTATIC bdr.tabPage : I
+    ICONST_1
+    IADD
+    BIPUSH 10
+    IMUL
+    ICONST_2
+    IADD
+    INVOKESTATIC java/lang/Math.min (II)I
+    ISTORE 6
+   L7
+    LINENUMBER 746 L7
+    GETSTATIC bdr.tabPage : I
+    IFEQ L8
+    IINC 8 2
+   L8
+    LINENUMBER 748 L8
+   FRAME FULL [bdr F I I aaf [Laaf; I T I] []
+    ILOAD 8
+    ISTORE 7
+   L9
+   FRAME FULL [bdr F I I aaf [Laaf; I I I] []
+    ILOAD 7
+    ILOAD 6
+    IF_ICMPGE L10
+   L11
+    LINENUMBER 750 L11
+    ALOAD 5
+    ILOAD 7
+    AALOAD
+    ASTORE 9
+   L12
+    LINENUMBER 751 L12
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKEVIRTUAL azd.N ()Lbpx;
+    GETSTATIC bdr.u : Lbqo;
+    INVOKEVIRTUAL bpx.a (Lbqo;)V
+   L13
+    LINENUMBER 753 L13
+    ALOAD 9
+    IFNONNULL L14
+    GOTO L15
+   L14
+    LINENUMBER 755 L14
+   FRAME FULL [bdr F I I aaf [Laaf; I I I aaf] []
+    ALOAD 9
+    INVOKEVIRTUAL aaf.a ()I
+    GETSTATIC bdr.w : I
+    IF_ICMPEQ L15
+   L16
+    LINENUMBER 757 L16
+    ALOAD 0
+    ALOAD 9
+    INVOKEVIRTUAL bdr.a (Laaf;)V
+   L15
+    LINENUMBER 748 L15
+   FRAME FULL [bdr F I I aaf [Laaf; I I I aaf] []
+    IINC 7 1
+    GOTO L9
+   L10
+    LINENUMBER 761 L10
+   FRAME FULL [bdr F I I aaf [Laaf; I I I] []
+    GETSTATIC bdr.tabPage : I
+    IFEQ L17
+   L18
+    LINENUMBER 763 L18
+    ALOAD 4
+    GETSTATIC aaf.g : Laaf;
+    IF_ACMPEQ L19
+   L20
+    LINENUMBER 765 L20
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKEVIRTUAL azd.N ()Lbpx;
+    GETSTATIC bdr.u : Lbqo;
+    INVOKEVIRTUAL bpx.a (Lbqo;)V
+   L21
+    LINENUMBER 766 L21
+    ALOAD 0
+    GETSTATIC aaf.g : Laaf;
+    INVOKEVIRTUAL bdr.a (Laaf;)V
+   L19
+    LINENUMBER 768 L19
+   FRAME FULL [bdr F I I aaf [Laaf; I I I] []
+    ALOAD 4
+    GETSTATIC aaf.m : Laaf;
+    IF_ACMPEQ L17
+   L22
+    LINENUMBER 770 L22
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKEVIRTUAL azd.N ()Lbpx;
+    GETSTATIC bdr.u : Lbqo;
+    INVOKEVIRTUAL bpx.a (Lbqo;)V
+   L23
+    LINENUMBER 771 L23
+    ALOAD 0
+    GETSTATIC aaf.m : Laaf;
+    INVOKEVIRTUAL bdr.a (Laaf;)V
+   L17
+    LINENUMBER 775 L17
+   FRAME FULL [bdr F I I aaf [Laaf; I I I] []
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKEVIRTUAL azd.N ()Lbpx;
+    NEW bqo
+    DUP
+    NEW java/lang/StringBuilder
+    DUP
+    INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+    LDC "textures/gui/container/creative_inventory/tab_"
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ALOAD 4
+    INVOKEVIRTUAL aaf.g ()Ljava/lang/String;
+    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+    INVOKESPECIAL bqo.<init> (Ljava/lang/String;)V
+    INVOKEVIRTUAL bpx.a (Lbqo;)V
+   L24
+    LINENUMBER 776 L24
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ALOAD 0
+    GETFIELD bdr.r : I
+    ICONST_0
+    ICONST_0
+    ALOAD 0
+    GETFIELD bdr.f : I
+    ALOAD 0
+    GETFIELD bdr.g : I
+    INVOKEVIRTUAL bdr.b (IIIIII)V
+   L25
+    LINENUMBER 777 L25
+    ALOAD 0
+    GETFIELD bdr.A : Lbap;
+    INVOKEVIRTUAL bap.f ()V
+   L26
+    LINENUMBER 778 L26
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor4f (FFFF)V
+   L27
+    LINENUMBER 779 L27
+    ALOAD 0
+    GETFIELD bdr.i : I
+    SIPUSH 175
+    IADD
+    ISTORE 9
+   L28
+    LINENUMBER 780 L28
+    ALOAD 0
+    GETFIELD bdr.r : I
+    BIPUSH 18
+    IADD
+    ISTORE 6
+   L29
+    LINENUMBER 781 L29
+    ILOAD 6
+    BIPUSH 112
+    IADD
+    ISTORE 7
+   L30
+    LINENUMBER 782 L30
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKEVIRTUAL azd.N ()Lbpx;
+    GETSTATIC bdr.u : Lbqo;
+    INVOKEVIRTUAL bpx.a (Lbqo;)V
+   L31
+    LINENUMBER 784 L31
+    ALOAD 4
+    INVOKEVIRTUAL aaf.j ()Z
+    IFEQ L32
+   L33
+    LINENUMBER 786 L33
+    ALOAD 0
+    ILOAD 9
+    ILOAD 6
+    ILOAD 7
+    ILOAD 6
+    ISUB
+    BIPUSH 17
+    ISUB
+    I2F
+    ALOAD 0
+    GETFIELD bdr.x : F
+    FMUL
+    F2I
+    IADD
+    SIPUSH 232
+    ALOAD 0
+    INVOKESPECIAL bdr.p ()Z
+    IFEQ L34
+    ICONST_0
+    GOTO L35
+   L34
+   FRAME FULL [bdr F I I aaf [Laaf; I I I I] [bdr I I I]
+    BIPUSH 12
+   L35
+   FRAME FULL [bdr F I I aaf [Laaf; I I I I] [bdr I I I I]
+    IADD
+    ICONST_0
+    BIPUSH 12
+    BIPUSH 15
+    INVOKEVIRTUAL bdr.b (IIIIII)V
+   L32
+    LINENUMBER 789 L32
+   FRAME FULL [bdr F I I aaf [Laaf; I I I I] []
+    ALOAD 4
+    IFNULL L36
+    ALOAD 4
+    INVOKEVIRTUAL aaf.getTabPage ()I
+    GETSTATIC bdr.tabPage : I
+    IF_ICMPEQ L37
+   L36
+    LINENUMBER 791 L36
+   FRAME FULL [bdr F I I aaf [Laaf; I I I I] []
+    ALOAD 4
+    GETSTATIC aaf.g : Laaf;
+    IF_ACMPEQ L37
+    ALOAD 4
+    GETSTATIC aaf.m : Laaf;
+    IF_ACMPEQ L37
+   L38
+    LINENUMBER 793 L38
+    RETURN
+   L37
+    LINENUMBER 797 L37
+   FRAME FULL [bdr F I I aaf [Laaf; I I I I] []
+    ALOAD 0
+    ALOAD 4
+    INVOKEVIRTUAL bdr.a (Laaf;)V
+   L39
+    LINENUMBER 799 L39
+    ALOAD 4
+    GETSTATIC aaf.m : Laaf;
+    IF_ACMPNE L40
+   L41
+    LINENUMBER 801 L41
+    ALOAD 0
+    GETFIELD bdr.i : I
+    BIPUSH 43
+    IADD
+    ALOAD 0
+    GETFIELD bdr.r : I
+    BIPUSH 45
+    IADD
+    BIPUSH 20
+    ALOAD 0
+    GETFIELD bdr.i : I
+    BIPUSH 43
+    IADD
+    ILOAD 2
+    ISUB
+    I2F
+    ALOAD 0
+    GETFIELD bdr.r : I
+    BIPUSH 45
+    IADD
+    BIPUSH 30
+    ISUB
+    ILOAD 3
+    ISUB
+    I2F
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    INVOKESTATIC bea.a (IIIFFLrh;)V
+   L40
+    LINENUMBER 803 L40
+   FRAME FULL [bdr F I I aaf [Laaf; I I I I] []
+    RETURN
+   L42
+    LOCALVARIABLE creativetabs1 Laaf; L12 L15 9
+    LOCALVARIABLE this Lbdr; L0 L42 0
+    LOCALVARIABLE p_146976_1_ F L0 L42 1
+    LOCALVARIABLE p_146976_2_ I L0 L42 2
+    LOCALVARIABLE p_146976_3_ I L0 L42 3
+    LOCALVARIABLE creativetabs Laaf; L3 L42 4
+    LOCALVARIABLE acreativetabs [Laaf; L4 L42 5
+    LOCALVARIABLE k I L5 L42 6
+    LOCALVARIABLE l I L9 L42 7
+    LOCALVARIABLE start I L6 L42 8
+    LOCALVARIABLE i1 I L28 L42 9
+    MAXSTACK = 7
+    MAXLOCALS = 10
+
+  // access flags 0x4
+  protected a(Laaf;II)Z
+    ALOAD 0
+    GETFIELD bdd.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 2
+    ALOAD 0
+    GETFIELD bdd.i : I
+    IADD
+    ILOAD 3
+    ALOAD 0
+    GETFIELD bdd.r : I
+    IADD
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.objectUnderMouse (II)Z
+    IFEQ L0
+    ICONST_0
+    IRETURN
+   L0
+    LINENUMBER 807 L0
+   FRAME FULL [bdr aaf I I] []
+    ALOAD 1
+    INVOKEVIRTUAL aaf.getTabPage ()I
+    GETSTATIC bdr.tabPage : I
+    IF_ICMPEQ L1
+   L2
+    LINENUMBER 809 L2
+    ALOAD 1
+    GETSTATIC aaf.g : Laaf;
+    IF_ACMPEQ L1
+    ALOAD 1
+    GETSTATIC aaf.m : Laaf;
+    IF_ACMPEQ L1
+   L3
+    LINENUMBER 812 L3
+    ICONST_0
+    IRETURN
+   L1
+    LINENUMBER 816 L1
+   FRAME FULL [bdr aaf I I] []
+    ALOAD 1
+    INVOKEVIRTUAL aaf.l ()I
+    ISTORE 4
+   L4
+    LINENUMBER 817 L4
+    BIPUSH 28
+    ILOAD 4
+    IMUL
+    ISTORE 5
+   L5
+    LINENUMBER 818 L5
+    ICONST_0
+    ISTORE 6
+   L6
+    LINENUMBER 820 L6
+    ILOAD 4
+    ICONST_5
+    IF_ICMPNE L7
+   L8
+    LINENUMBER 822 L8
+    ALOAD 0
+    GETFIELD bdr.f : I
+    BIPUSH 28
+    ISUB
+    ICONST_2
+    IADD
+    ISTORE 5
+    GOTO L9
+   L7
+    LINENUMBER 824 L7
+   FRAME FULL [bdr aaf I I I I I] []
+    ILOAD 4
+    IFLE L9
+   L10
+    LINENUMBER 826 L10
+    ILOAD 5
+    ILOAD 4
+    IADD
+    ISTORE 5
+   L9
+    LINENUMBER 831 L9
+   FRAME FULL [bdr aaf I I I I I] []
+    ALOAD 1
+    INVOKEVIRTUAL aaf.m ()Z
+    IFEQ L11
+   L12
+    LINENUMBER 833 L12
+    ILOAD 6
+    BIPUSH 32
+    ISUB
+    ISTORE 7
+   L13
+    GOTO L14
+   L11
+    LINENUMBER 837 L11
+   FRAME FULL [bdr aaf I I I I I] []
+    ILOAD 6
+    ALOAD 0
+    GETFIELD bdr.g : I
+    IADD
+    ISTORE 7
+   L14
+    LINENUMBER 840 L14
+   FRAME FULL [bdr aaf I I I I I I] []
+    ILOAD 2
+    ILOAD 5
+    IF_ICMPLT L15
+    ILOAD 2
+    ILOAD 5
+    BIPUSH 28
+    IADD
+    IF_ICMPGT L15
+    ILOAD 3
+    ILOAD 7
+    IF_ICMPLT L15
+    ILOAD 3
+    ILOAD 7
+    BIPUSH 32
+    IADD
+    IF_ICMPGT L15
+    ICONST_1
+    GOTO L16
+   L15
+   FRAME FULL [bdr aaf I I I I I I] []
+    ICONST_0
+   L16
+   FRAME FULL [bdr aaf I I I I I I] [I]
+    IRETURN
+   L17
+    LOCALVARIABLE i1 I L13 L11 7
+    LOCALVARIABLE this Lbdr; L0 L17 0
+    LOCALVARIABLE p_147049_1_ Laaf; L0 L17 1
+    LOCALVARIABLE p_147049_2_ I L0 L17 2
+    LOCALVARIABLE p_147049_3_ I L0 L17 3
+    LOCALVARIABLE k I L4 L17 4
+    LOCALVARIABLE l I L5 L17 5
+    LOCALVARIABLE b0 B L6 L17 6
+    LOCALVARIABLE i1 I L14 L17 7
+    MAXSTACK = 4
+    MAXLOCALS = 8
+
+  // access flags 0x4
+  protected b(Laaf;II)Z
+    ALOAD 0
+    GETFIELD bdd.manager : Lcodechicken/nei/guihook/GuiContainerManager;
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL codechicken/nei/guihook/GuiContainerManager.objectUnderMouse (II)Z
+    IFEQ L0
+    ICONST_0
+    IRETURN
+   L0
+    LINENUMBER 845 L0
+   FRAME FULL [bdr aaf I I] []
+    ALOAD 1
+    INVOKEVIRTUAL aaf.l ()I
+    ISTORE 4
+   L1
+    LINENUMBER 846 L1
+    BIPUSH 28
+    ILOAD 4
+    IMUL
+    ISTORE 5
+   L2
+    LINENUMBER 847 L2
+    ICONST_0
+    ISTORE 6
+   L3
+    LINENUMBER 849 L3
+    ILOAD 4
+    ICONST_5
+    IF_ICMPNE L4
+   L5
+    LINENUMBER 851 L5
+    ALOAD 0
+    GETFIELD bdr.f : I
+    BIPUSH 28
+    ISUB
+    ICONST_2
+    IADD
+    ISTORE 5
+    GOTO L6
+   L4
+    LINENUMBER 853 L4
+   FRAME FULL [bdr aaf I I I I I] []
+    ILOAD 4
+    IFLE L6
+   L7
+    LINENUMBER 855 L7
+    ILOAD 5
+    ILOAD 4
+    IADD
+    ISTORE 5
+   L6
+    LINENUMBER 860 L6
+   FRAME FULL [bdr aaf I I I I I] []
+    ALOAD 1
+    INVOKEVIRTUAL aaf.m ()Z
+    IFEQ L8
+   L9
+    LINENUMBER 862 L9
+    ILOAD 6
+    BIPUSH 32
+    ISUB
+    ISTORE 7
+   L10
+    GOTO L11
+   L8
+    LINENUMBER 866 L8
+   FRAME FULL [bdr aaf I I I I I] []
+    ILOAD 6
+    ALOAD 0
+    GETFIELD bdr.g : I
+    IADD
+    ISTORE 7
+   L11
+    LINENUMBER 869 L11
+   FRAME FULL [bdr aaf I I I I I I] []
+    ALOAD 0
+    ILOAD 5
+    ICONST_3
+    IADD
+    ILOAD 7
+    ICONST_3
+    IADD
+    BIPUSH 23
+    BIPUSH 27
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL bdr.c (IIIIII)Z
+    IFEQ L12
+   L13
+    LINENUMBER 871 L13
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL aaf.c ()Ljava/lang/String;
+    ICONST_0
+    ANEWARRAY java/lang/Object
+    INVOKESTATIC bra.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    ILOAD 2
+    ILOAD 3
+    INVOKEVIRTUAL bdr.a (Ljava/lang/String;II)V
+   L14
+    LINENUMBER 872 L14
+    ICONST_1
+    IRETURN
+   L12
+    LINENUMBER 876 L12
+   FRAME FULL [bdr aaf I I I I I I] []
+    ICONST_0
+    IRETURN
+   L15
+    LOCALVARIABLE i1 I L10 L8 7
+    LOCALVARIABLE this Lbdr; L0 L15 0
+    LOCALVARIABLE p_147052_1_ Laaf; L0 L15 1
+    LOCALVARIABLE p_147052_2_ I L0 L15 2
+    LOCALVARIABLE p_147052_3_ I L0 L15 3
+    LOCALVARIABLE k I L1 L15 4
+    LOCALVARIABLE l I L2 L15 5
+    LOCALVARIABLE b0 B L3 L15 6
+    LOCALVARIABLE i1 I L11 L15 7
+    MAXSTACK = 7
+    MAXLOCALS = 8
+
+  // access flags 0x4
+  protected a(Laaf;)V
+   L0
+    LINENUMBER 882 L0
+    ALOAD 1
+    INVOKEVIRTUAL aaf.a ()I
+    GETSTATIC bdr.w : I
+    IF_ICMPNE L1
+    ICONST_1
+    GOTO L2
+   L1
+   FRAME FULL [bdr aaf] []
+    ICONST_0
+   L2
+   FRAME FULL [bdr aaf] [I]
+    ISTORE 2
+   L3
+    LINENUMBER 883 L3
+    ALOAD 1
+    INVOKEVIRTUAL aaf.m ()Z
+    ISTORE 3
+   L4
+    LINENUMBER 884 L4
+    ALOAD 1
+    INVOKEVIRTUAL aaf.l ()I
+    ISTORE 4
+   L5
+    LINENUMBER 885 L5
+    ILOAD 4
+    BIPUSH 28
+    IMUL
+    ISTORE 5
+   L6
+    LINENUMBER 886 L6
+    ICONST_0
+    ISTORE 6
+   L7
+    LINENUMBER 887 L7
+    ALOAD 0
+    GETFIELD bdr.i : I
+    BIPUSH 28
+    ILOAD 4
+    IMUL
+    IADD
+    ISTORE 7
+   L8
+    LINENUMBER 888 L8
+    ALOAD 0
+    GETFIELD bdr.r : I
+    ISTORE 8
+   L9
+    LINENUMBER 889 L9
+    BIPUSH 32
+    ISTORE 9
+   L10
+    LINENUMBER 891 L10
+    ILOAD 2
+    IFEQ L11
+   L12
+    LINENUMBER 893 L12
+    IINC 6 32
+   L11
+    LINENUMBER 896 L11
+   FRAME FULL [bdr aaf I I I I I I I I] []
+    ILOAD 4
+    ICONST_5
+    IF_ICMPNE L13
+   L14
+    LINENUMBER 898 L14
+    ALOAD 0
+    GETFIELD bdr.i : I
+    ALOAD 0
+    GETFIELD bdr.f : I
+    IADD
+    BIPUSH 28
+    ISUB
+    ISTORE 7
+    GOTO L15
+   L13
+    LINENUMBER 900 L13
+   FRAME FULL [bdr aaf I I I I I I I I] []
+    ILOAD 4
+    IFLE L15
+   L16
+    LINENUMBER 902 L16
+    ILOAD 7
+    ILOAD 4
+    IADD
+    ISTORE 7
+   L15
+    LINENUMBER 905 L15
+   FRAME FULL [bdr aaf I I I I I I I I] []
+    ILOAD 3
+    IFEQ L17
+   L18
+    LINENUMBER 907 L18
+    IINC 8 -28
+    GOTO L19
+   L17
+    LINENUMBER 911 L17
+   FRAME FULL [bdr aaf I I I I I I I I] []
+    IINC 6 64
+   L20
+    LINENUMBER 912 L20
+    ILOAD 8
+    ALOAD 0
+    GETFIELD bdr.g : I
+    ICONST_4
+    ISUB
+    IADD
+    ISTORE 8
+   L19
+    LINENUMBER 915 L19
+   FRAME FULL [bdr aaf I I I I I I I I] []
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L21
+    LINENUMBER 916 L21
+    FCONST_1
+    FCONST_1
+    FCONST_1
+    INVOKESTATIC org/lwjgl/opengl/GL11.glColor3f (FFF)V
+   L22
+    LINENUMBER 917 L22
+    ALOAD 0
+    ILOAD 7
+    ILOAD 8
+    ILOAD 5
+    ILOAD 6
+    BIPUSH 28
+    ILOAD 9
+    INVOKEVIRTUAL bdr.b (IIIIII)V
+   L23
+    LINENUMBER 918 L23
+    ALOAD 0
+    LDC 100.0
+    PUTFIELD bdr.e : F
+   L24
+    LINENUMBER 919 L24
+    GETSTATIC bdr.j : Lbnq;
+    LDC 100.0
+    PUTFIELD bnq.f : F
+   L25
+    LINENUMBER 920 L25
+    IINC 7 6
+   L26
+    LINENUMBER 921 L26
+    ILOAD 8
+    BIPUSH 8
+    ILOAD 3
+    IFEQ L27
+    ICONST_1
+    GOTO L28
+   L27
+   FRAME FULL [bdr aaf I I I I I I I I] [I I]
+    ICONST_M1
+   L28
+   FRAME FULL [bdr aaf I I I I I I I I] [I I I]
+    IADD
+    IADD
+    ISTORE 8
+   L29
+    LINENUMBER 922 L29
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L30
+    LINENUMBER 923 L30
+    LDC 32826
+    INVOKESTATIC org/lwjgl/opengl/GL11.glEnable (I)V
+   L31
+    LINENUMBER 924 L31
+    ALOAD 1
+    INVOKEVIRTUAL aaf.d ()Labp;
+    ASTORE 10
+   L32
+    LINENUMBER 925 L32
+    GETSTATIC bdr.j : Lbnq;
+    ALOAD 0
+    GETFIELD bdr.q : Lbag;
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKEVIRTUAL azd.N ()Lbpx;
+    ALOAD 10
+    ILOAD 7
+    ILOAD 8
+    INVOKEVIRTUAL bnq.b (Lbag;Lbpx;Labp;II)V
+   L33
+    LINENUMBER 926 L33
+    GETSTATIC bdr.j : Lbnq;
+    ALOAD 0
+    GETFIELD bdr.q : Lbag;
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    INVOKEVIRTUAL azd.N ()Lbpx;
+    ALOAD 10
+    ILOAD 7
+    ILOAD 8
+    INVOKEVIRTUAL bnq.c (Lbag;Lbpx;Labp;II)V
+   L34
+    LINENUMBER 927 L34
+    SIPUSH 2896
+    INVOKESTATIC org/lwjgl/opengl/GL11.glDisable (I)V
+   L35
+    LINENUMBER 928 L35
+    GETSTATIC bdr.j : Lbnq;
+    FCONST_0
+    PUTFIELD bnq.f : F
+   L36
+    LINENUMBER 929 L36
+    ALOAD 0
+    FCONST_0
+    PUTFIELD bdr.e : F
+   L37
+    LINENUMBER 930 L37
+    RETURN
+   L38
+    LOCALVARIABLE this Lbdr; L0 L38 0
+    LOCALVARIABLE p_147051_1_ Laaf; L0 L38 1
+    LOCALVARIABLE flag Z L3 L38 2
+    LOCALVARIABLE flag1 Z L4 L38 3
+    LOCALVARIABLE i I L5 L38 4
+    LOCALVARIABLE j I L6 L38 5
+    LOCALVARIABLE k I L7 L38 6
+    LOCALVARIABLE l I L8 L38 7
+    LOCALVARIABLE i1 I L9 L38 8
+    LOCALVARIABLE b0 B L10 L38 9
+    LOCALVARIABLE itemstack Labp; L32 L38 10
+    MAXSTACK = 7
+    MAXLOCALS = 11
+
+  // access flags 0x4
+  protected a(Lban;)V
+   L0
+    LINENUMBER 934 L0
+    ALOAD 1
+    GETFIELD ban.k : I
+    IFNE L1
+   L2
+    LINENUMBER 936 L2
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    NEW bco
+    DUP
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    INVOKEVIRTUAL bje.m ()Loe;
+    INVOKESPECIAL bco.<init> (Lbcd;Loe;)V
+    INVOKEVIRTUAL azd.a (Lbcd;)V
+   L1
+    LINENUMBER 939 L1
+   FRAME FULL [bdr ban] []
+    ALOAD 1
+    GETFIELD ban.k : I
+    ICONST_1
+    IF_ICMPNE L3
+   L4
+    LINENUMBER 941 L4
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    NEW bcp
+    DUP
+    ALOAD 0
+    ALOAD 0
+    GETFIELD bdr.k : Lazd;
+    GETFIELD azd.h : Lbje;
+    INVOKEVIRTUAL bje.m ()Loe;
+    INVOKESPECIAL bcp.<init> (Lbcd;Loe;)V
+    INVOKEVIRTUAL azd.a (Lbcd;)V
+   L3
+    LINENUMBER 944 L3
+   FRAME FULL [bdr ban] []
+    ALOAD 1
+    GETFIELD ban.k : I
+    BIPUSH 101
+    IF_ICMPNE L5
+   L6
+    LINENUMBER 946 L6
+    GETSTATIC bdr.tabPage : I
+    ICONST_1
+    ISUB
+    ICONST_0
+    INVOKESTATIC java/lang/Math.max (II)I
+    PUTSTATIC bdr.tabPage : I
+    GOTO L7
+   L5
+    LINENUMBER 948 L5
+   FRAME FULL [bdr ban] []
+    ALOAD 1
+    GETFIELD ban.k : I
+    BIPUSH 102
+    IF_ICMPNE L7
+   L8
+    LINENUMBER 950 L8
+    GETSTATIC bdr.tabPage : I
+    ICONST_1
+    IADD
+    ALOAD 0
+    GETFIELD bdr.maxPages : I
+    INVOKESTATIC java/lang/Math.min (II)I
+    PUTSTATIC bdr.tabPage : I
+   L7
+    LINENUMBER 952 L7
+   FRAME FULL [bdr ban] []
+    RETURN
+   L9
+    LOCALVARIABLE this Lbdr; L0 L9 0
+    LOCALVARIABLE p_146284_1_ Lban; L0 L9 1
+    MAXSTACK = 5
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public g()I
+   L0
+    LINENUMBER 956 L0
+    GETSTATIC bdr.w : I
+    IRETURN
+   L1
+    LOCALVARIABLE this Lbdr; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+
+  // access flags 0x1008
+  static synthetic access$100()Lpu;
+   L0
+    LINENUMBER 38 L0
+    GETSTATIC bdr.v : Lpu;
+    ARETURN
+    MAXSTACK = 1
+    MAXLOCALS = 0
+
+  // access flags 0x8
+  static <clinit>()V
+   L0
+    LINENUMBER 40 L0
+    NEW bqo
+    DUP
+    LDC "textures/gui/container/creative_inventory/tabs.png"
+    INVOKESPECIAL bqo.<init> (Ljava/lang/String;)V
+    PUTSTATIC bdr.u : Lbqo;
+   L1
+    LINENUMBER 41 L1
+    NEW pu
+    DUP
+    LDC "tmp"
+    ICONST_1
+    BIPUSH 45
+    INVOKESPECIAL pu.<init> (Ljava/lang/String;ZI)V
+    PUTSTATIC bdr.v : Lpu;
+   L2
+    LINENUMBER 42 L2
+    GETSTATIC aaf.b : Laaf;
+    INVOKEVIRTUAL aaf.a ()I
+    PUTSTATIC bdr.w : I
+   L3
+    LINENUMBER 52 L3
+    ICONST_0
+    PUTSTATIC bdr.tabPage : I
+    RETURN
+    MAXSTACK = 5
+    MAXLOCALS = 0
+}

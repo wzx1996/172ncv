@@ -20,5 +20,10 @@
   "18": "FOREST_HILLS",
   "21": "JUNGLE",
   "20": "MOUNTAINS",
-  "22": "JUNGLE_HILLS"
+  "22": "JUNGLE_HILLS",
+  "24": "WATER",
+  "94": "WATER",
+  "97": "MOUNTAINS",
+  "108": "FOREST",
+  "104": "FOREST"
 }
